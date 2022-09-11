@@ -1,4 +1,3 @@
-<?php include('scripts/db.config.php');?>
 <!-- testimony Body -->
 <section class="testimony-wrapper">
     <div class="container text-center shadow">

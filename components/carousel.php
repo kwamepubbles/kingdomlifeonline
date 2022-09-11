@@ -1,24 +1,61 @@
 <?php 
-include('scripts/db.config.php');
 
- try 
- {
-    $query = $plug->prepare("SELECT * FROM slider_img ORDER BY `id` ASC;");
-    $query->execute();
-    $result = $query->fetchAll(PDO::FETCH_ASSOC);
+  $query = $plug->prepare("SELECT img_path FROM slider");
+  $query->execute();
+  $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
-    foreach($result as $result){    
-        $id = $result['id'];
-        $img_path = $result['img_path'];
-        var_dump($id);
-    }
-  } 
-  catch (PDOException $e) {
-    exit("Error: " . $e->getMessage());
-   }
+  $i = 0;
+  foreach ($result as $row['id']){
+    $actives = '';
+    if($i == 0){
+      $actives = 'active';
+      }
+    
 ?>
-
 <div class="container-fluid">
+  <div class="row">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+      
+      <li data-target="#carouselIndicators" data-slide-to="<?php $i; ?>" class="<?php $actives; ?>"></li>
+
+      <?php $i++; } ?>
+
+      </ul>
+      <div class="carousel-inner">
+        <?php
+
+          $query = $plug->prepare("SELECT img_path FROM slider");
+          $query->execute();
+          $result = $query->fetchAll(PDO::FETCH_ASSOC);
+        
+        $i = 0;
+          foreach ($result as $row['img_path']){
+            $actives = '';
+              if($i == 0){
+              $actives = 'active';
+            }
+        
+         
+        ?>
+        <div class="carousel-item <?php $actives;?>">
+            <img class="d-block" src="<?php $row['img_path'];?>" class="img-fluid" width="100%" height="500px">
+        </div>
+          <?php $i++;}?>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+</div>
+
+<!--<div class="container-fluid">
   <div class="row">
     <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">

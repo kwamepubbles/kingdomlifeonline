@@ -1,6 +1,10 @@
 <?php
 include('components/header.php');
 ?>
+<section>
+    <?php include('events.php');?>
+</section>
+
 <section class="carousel">
     <div class="p-0 mb-0">
         <?php include('components/carousel.php');?>
@@ -72,9 +76,6 @@ include('components/header.php');
         </div>
     </div>
 </section>
-<?php
-include('events.php');
-?>
 
 <?php
 include('carousel_events.php');
@@ -85,22 +86,3 @@ include('testimonials.php');
 <?php
 include('components/footer.php');
 ?>
-
-<div class="modal fade" id="testimonyModal" tabindex="-1" role="dialog" aria-labelledby="testimonyModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="testimonyModalLabel">Congratulations !!!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>You have successfully shared your testimony. God bless you for giving hope to someone.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
