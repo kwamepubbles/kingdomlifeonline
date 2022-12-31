@@ -1,43 +1,70 @@
 <?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingdom Life International</title>
-    <link rel="icon" href="img/klm-cl.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark shadow normal" style="background-color: #420075;">
-        <a class="navbar-brand"href="index.php"><img src="./img/klm-HD.png" class="d-block rounded-circle"></a><a class="navbar-brand" href="index.php" style="font-size:11px;">KINGDOM LIFE INTERNATIONAL</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true"><i class="fas fa-church"></i> Ministrations</a>
-                    <ul class="dropdown-menu" href="#" style="background-color: #CB8AFF;">
-                        <li><a class="dropdown-item text-uppercase" href="school.php"><i class="fas fa-graduation-cap"></i> School of the Spirit</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-uppercase" href="command.php"><i class="fas fa-praying-hands"></i> Commanding The Month</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-uppercase" href="allnight.php"><i class="fas fa-moon"></i> All-Nights</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="missions.php" role="button"><i class="fas fa-bullhorn"></i> Missions</a></li>
-                <li class="nav-item"><a class="nav-link" href="podcast.php" role="button"><i class="fas fa-podcast"></i> Podcasts</a></li>
-                <li class="nav-item"><a class="nav-link" href="support.php" role="button"><i class="fas fa-donate"></i> Support</a></li>
-                <li class="nav-item"><a class="nav-link" href="library.php" role="button"><i class="fas fa-book-reader"></i> Library</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.php" role="button"><i class="fas fa-globe"></i> About</a></li>
-            </ul>
-        </div>
-    </nav>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kingdom Life International</title>
+  <link rel="icon" href="img/klm-cl.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
+  <script src="https://widget.northeurope.cloudapp.azure.com:9443/v0.1.0/mobile-money-widget-mtn.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg shadow mx-background-top-linear fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" rel="nofollow" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a><p>KINGDOM LIFE</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <i class="bi bi-house"></i>
+              <a class="nav-link" aria-current="page" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-headphones"></i>
+              <a class="nav-link" href="podcast.php">Podcast</a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-book"></i>
+              <a class="nav-link" href="library.php">Library</a>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-praying-hands"></i>
+              <a class="nav-link" href="pray.php">Pray</a>
+            </li>
+            <li class="nav-item">
+              <i class="fas fa-seedling"></i>
+              <a class="nav-link" href="support.php">Seeds & Offering</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <i class="fas fa-fax"></i>
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav>
+      <ul class="navbar">
+        <li class="nav-item">
+        <i class="fas fa-fax"></i>
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>

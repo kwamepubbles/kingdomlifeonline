@@ -1,50 +1,52 @@
 <?php
 include('components/header.php');
 ?>
-<section class="support">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card shadow p-3 mb-3  rounded">
-                    <div class="card-body text-center">
-                        <h1>Support</h1>
-                        <span>Experiencing true intmacy with the Holy Spirit.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="support-bg">
     <div class="container">
         <div class="row">
-            <div class="col-12 p-3 mb-5">
-                <div class="card shadow p-3 mb-5 rounded">
-                    <h1 class="display-6">Support Us</h1>
-                    <div class="card-body align-self-center">
-                        <form action="" class="text-center">      
-                            <h6>Select Network</h6>
-                            <div class="">
-                                <select class="form-control col-4 text-center" id="">
-                                    <option value="" selected disabled>--Please select Network--</option>
-                                    <option>MTN</option>
-                                    <option>Vodafone</option>
-                                </select>
+            <div class="col-12 pt-5 mb-5">
+                <div class="card shadow  rounded">
+                    <h2 class="text-center pt-2"><i class="fas fa-seedling"></i><br>Seeds & Offering </h2>
+                    <br>
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/momo.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div class="col-6">
+                                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="$_POST">
+                                        <div class=" p-5 mt-0">
+                                            <div class="form-floating ">
+                                                <div class=" mb-3 input-group">
+                                                    <span class="input-group-text">Phone</span>
+                                                    <input type="text" aria-label="phone-number" class="form-control" placeholder="024XXXXXXX" required>
+                                                </div>
+                                                <div class=" mb-3 input-group">
+                                                    <span class="input-group-text">Amount</span>
+                                                    <input type="text" aria-label="amount" class="form-control" name="amount" id="amount"placeholder="0.00" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="row justify-content-center">
+                                                <div class="col-sm-6 mb-3">
+                                                    <button class="btn btn-md btn-outline-success" type="submit" target="blank">Authorize Payment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-3">
+                                    <img src="img/momo.jpg" class="img-fluid" alt="...">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
-                            </div>
-                            <div class="form-group">
-                                <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
-                            </div>        
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
+
 <?php
 include('components/footer.php');
 ?>
