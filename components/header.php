@@ -17,54 +17,47 @@
   <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
   <script src="https://widget.northeurope.cloudapp.azure.com:9443/v0.1.0/mobile-money-widget-mtn.js"></script>
 </head>
+<header>
+  <nav class="navbar navbar-expand-lg shadow mx-background-top-linear fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" rel="nofollow" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
+      <p>KINGDOM LIFE</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <i class="bi bi-house"></i>
+            <a class="nav-link" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-headphones"></i>
+            <a class="nav-link" href="podcast.php">Podcast</a>
+          </li>
+          <li class="nav-item">
+            <i class="bi bi-book"></i>
+            <a class="nav-link" href="library.php">Library</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-praying-hands"></i>
+            <a class="nav-link" href="pray.php">Pray</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-seedling"></i>
+            <a class="nav-link" href="support.php">Seeds & Offering</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <i class="fas fa-fax"></i>
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg shadow mx-background-top-linear fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" rel="nofollow" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a><p>KINGDOM LIFE</p>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <i class="bi bi-house"></i>
-              <a class="nav-link" aria-current="page" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <i class="bi bi-headphones"></i>
-              <a class="nav-link" href="podcast.php">Podcast</a>
-            </li>
-            <li class="nav-item">
-              <i class="bi bi-book"></i>
-              <a class="nav-link" href="library.php">Library</a>
-            </li>
-            <li class="nav-item">
-              <i class="fas fa-praying-hands"></i>
-              <a class="nav-link" href="pray.php">Pray</a>
-            </li>
-            <li class="nav-item">
-              <i class="fas fa-seedling"></i>
-              <a class="nav-link" href="support.php">Seeds & Offering</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <i class="fas fa-fax"></i>
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <nav>
-      <ul class="navbar">
-        <li class="nav-item">
-        <i class="fas fa-fax"></i>
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
   <main>

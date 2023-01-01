@@ -67,20 +67,6 @@ nav {
 
 
 /*--------------- 
-  Carousel Slider
------------------*/
-.carousel-inner img {
-  display: block;
-  height: 300px;
-  overflow: hidden;
-}
-.carousel {
-  background-size: cover;
-  --bs-gutter-x: 0rem;
-  --bs-gutter-y: 0;
-}
-
-/*--------------- 
   Testimony
 -----------------*/
 .testimony-wrapper {
@@ -91,14 +77,7 @@ nav {
     #6767674a
   );
 }
-.test_sub {
-  background-image: linear-gradient(
-    to right bottom,
-    #000000,
-    #6403a4a4,
-    #6767674a
-  );
-}
+
 #profile {
   background-color: unset;
 }
@@ -106,7 +85,7 @@ nav {
 #post {
   text-align: center;
   background-color: #380958;
-  width: 15%;
+  width: 100%;
   color: white;
 }
 
@@ -128,7 +107,7 @@ label {
 }
 
 form {
-  width: auto;
+  width: 100%;
 }
 
 .form-group p a {
@@ -144,9 +123,6 @@ form {
   position: static;
 }
 
-.align-form {
-  background-color: rgb(124, 86, 238);
-}
 
 .admin {
   border: 2px solid;
@@ -210,11 +186,6 @@ div a {
   text-decoration: none;
 }
 
-.pray {
-  background-image: url("../img/lion.jpg");
-  background-repeat: no-repeat;
-  background-position: cover;
-}
 /*
 --------------------------------------------
 events

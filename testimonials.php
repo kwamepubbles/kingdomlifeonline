@@ -29,7 +29,7 @@
         }
 
         #myCarousel {
-            padding: 0 70px;
+            padding: 0 100px;
         }
 
         .carousel .carousel-item {
@@ -80,19 +80,18 @@
 
         .carousel-control-prev i,
         .carousel-control-next i {
-            font-size: 68px;
-            line-height: 42px;
+            font-size: 40px;
+            line-height: 20px;
             position: absolute;
             display: inline-block;
             color: rgba(0, 0, 0, 0.8);
-            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
         }
     </style>
     <div class="container-xl">
         <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col mx-auto">
                 <h2>Testimonials</h2>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -111,7 +110,7 @@
                             <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
                         </div>
                     </div>
-                    <!-- Carousel controls -->
+                    <!-- Carousel controls 
                     <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
                         <i class="fa fa-angle-left"></i>
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -119,90 +118,97 @@
                     <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
                         <i class="fa fa-angle-right"></i>
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class=" col-sm btn btn outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-                        click here
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
+                    <div class="row justify-content-center">
+                        <button class=" col-4 btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                            Share Testimony
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel">Share your testimony</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <?php
-        require_once('scripts/db.config.php');
-        ?>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col justify-content-center">
+<div class="row justify-content-center">
+    <div class="col-12">
+        <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasLabel">TESTIMONY</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <?php
+                require_once('scripts/db.config.php');
 
-                    <?php
+                try {
+                    $msg = "";
+                    if (isset($_POST['submit'])) {
+                        $message = htmlspecialchars($_POST['message']);
+                        $fname = htmlspecialchars($_POST['fname']);
+                        $email = htmlspecialchars($_POST['email']);
+                        $checked = htmlspecialchars($_POST['checked']);
+                        $query = $plug->prepare("SELECT * FROM testimony WHERE email=:email");
+                        $query->bindParam("email", $email, PDO::PARAM_STR);
+                        $query->execute();
 
-                    try {
-                        $msg = "";
-                        if (isset($_POST['submit'])) {
-                            $message = htmlspecialchars($_POST['message']);
-                            $fname = htmlspecialchars($_POST['fname']);
-                            $email = htmlspecialchars($_POST['email']);
-                            $checked = htmlspecialchars($_POST['checked']);
-                            $query = $plug->prepare("SELECT * FROM testimony WHERE email=:email");
+                        if ($query->rowCount() > 0) {
+                            $msg = '<div class="alert alert-danger alert-dismissible fade show" role="alert">The email address is already registered!</p>';
+                        }
+
+                        if ($query->rowCount() == 0) {
+                            $query = $plug->prepare("INSERT INTO testimony (message,fname,email,checked) VALUES (:message,:fname,:email,:checked)");
+                            $query->bindParam("message", $message, PDO::PARAM_STR);
+                            $query->bindParam("fname", $fname, PDO::PARAM_STR);
                             $query->bindParam("email", $email, PDO::PARAM_STR);
-                            $query->execute();
+                            $query->bindParam("checked", $checked, PDO::PARAM_STR);
+                            $result = $query->execute();
 
-                            if ($query->rowCount() > 0) {
-                                $msg = '<div class="alert alert-danger alert-dismissible fade show" role="alert">The email address is already registered!</p>';
-                            }
-
-                            if ($query->rowCount() == 0) {
-                                $query = $plug->prepare("INSERT INTO testimony (message,fname,email,checked) VALUES (:message,:fname,:email,:checked)");
-                                $query->bindParam("message", $message, PDO::PARAM_STR);
-                                $query->bindParam("fname", $fname, PDO::PARAM_STR);
-                                $query->bindParam("email", $email, PDO::PARAM_STR);
-                                $query->bindParam("checked", $checked, PDO::PARAM_STR);
-                                $result = $query->execute();
-
-                                if ($result) {
-                                    $msg = '<div class="alert alert-success alert-dismissible fade show" role="alert">Testimony successfully submitted</div>';
-                                }
+                            if ($result) {
+                                $msg = '<div class="alert alert-success alert-dismissible fade show" role="alert">Testimony successfully submitted</div>';
                             }
                         }
-                    } catch (PDOException $e) {
-                        exit("Error: " . $e->getMessage());
                     }
+                } catch (PDOException $e) {
+                    exit("Error: " . $e->getMessage());
+                }
 
-                    ?>
+                ?>
 
-                    <div class="form-group col-md m-3 p-3">
-                        <?= $msg; ?>
+                <div class="form-group">
+                    <?= $msg; ?>
+                </div>
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" name="fname" id="fullname" class="form-control text-capitalize" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" class="form-control text-capitalize" required>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="msg" cols="30" rows="10" class="form-control text-sentence" required></textarea>
+                    </div><br>
+                    <div class="form-inline">
+                        <label>Send me event notifications via E-mail</label>
+                        <input type="checkbox" name="checked" id="checkbx" value="Yes" class="mr-1">
                     </div>
-                    <form class="align-form m-3 p-3 rounded shadow" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea name="message" id="msg" cols="30" rows="5" class="form-control text-sentence" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Full Name:</label>
-                            <input type="text" name="fname" id="fullname" class="form-control text-capitalize" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail:</label>
-                            <input type="email" name="email" id="email" class="form-control text-capitalize" required>
-                        </div>
-                        <div class="form-inline">
-                            <input type="checkbox" name="checked" id="checkbx" value="Yes" class="mr-1">
-                            <label>I wish to recieve event notifications via E-mail</label>
-                        </div>
-                        <div class="form-group text-center">
+                    <div class="row justify-content-center">
+                        <div class="form-group text-center col-4 mt-4">
                             <button type="submit" name="submit" id="post" class="btn">Submit <i class="bi bi-send-fill"></i></button>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
