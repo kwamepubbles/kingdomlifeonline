@@ -24,15 +24,13 @@ include('components/header.php');
                         <div class="row justify-content-center">
                             <div class="col-4">
                                 <p>
-                                <h1 class="text-center">SUPPORT <br> THE <br> KINGDOM</h1>
-                                <img src="img/Donate Page_GiveNow.png" class="img-fluid" alt="...">
+                                <h3 class="text-center">SUPPORT <br> THE <br> KINGDOM</h3>
+                                <img src="img/Donate Page_GiveNow.png" class="img-fluid pt-4" alt="...">
                                 </p>
                             </div>
                             <div class="col-6">
                                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="$_POST">
                                     <?php
-
-
                                     if (isset($_POST['submit'])) {
                                         $phone = $_POST['phone'];
                                         $amount = $_POST['amount'];
