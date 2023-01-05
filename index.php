@@ -4,90 +4,38 @@ include('components/header.php');
 <?php
 require_once('scripts/db.config.php');
 ?>
-<section>
-    <div class="container-fluid-xl">
-        <div class="row justify-content-center">
-            <?php
-            $stmt = $plug->prepare("SELECT * FROM carousel");
-            $stmt->execute();
-            // set the resulting array to associative
-            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-            $carousel_images = $stmt->fetchAll();
-            ?>
-            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <?php
-                    $i = 0;
-                    foreach ($carousel_images as $image) {
-                        if ($i == 0) {
-                            echo '<li data-bs-target="#carouselIndicators" data-bs-slide-to="' . $i . '" class="active"></li>';
-                        } else {
-                            echo '<li data-bs-target="#carouselIndicators" data-bs-slide-to="' . $i . '"></li>';
-                        }
-                        $i++;
-                    }
-                    ?>
-                </ol>
-                <div class="carousel-inner">
-                    <?php
-                    $i = 0;
-                    foreach ($carousel_images as $image) {
-                        if ($i == 0) {
-                            echo '<div class="carousel-item active">';
-                        } else {
-                            echo '<div class="carousel-item">';
-                        }
-                        echo '<img class="d-block image-fluid" width="100%" height="500px" src="' . "gallery/" . $image['image_path'] . '" alt="' . $image['image_title'] . '">';
-                        echo '</div>';
-                        $i++;
-                    }
-                    ?>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-</section>
+<?php
+include('components/carousel.php');
+?>
 <section class="p">
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-lg col-md col-sm">
-                <div class="row justify-content-center">
-                    <h2 class="text-white font-weight-bold text-center pt-4"> Welcome to Kingdom Life</h2>
-                    <div class="col- inner mb-4">
-                        <p class="text-white text-wrap">
-                            We are a community of believers dedicated to spreading the love and message of Jesus Christ. We strive to create an atmosphere of acceptance, kindness, and support.
-                            Our fellowship acivities include a mix of traditional and contemporary worship, prophetic ministrations as well as expounding of scripture. We also offer a variety of small group Bible studies and prayer partnerships.
-                            If you are new to KINGDOM LIFE, we invite you to come and check us out. Our doors are always open and we would love to have you join us in worship and fellowship.
-                            For more information, please feel free to contact us or visit our social media platforms. We look forward to meeting you and growing in faith together.
-                            <br>
-                            <br>
-                            Blessings,
-                            <br>
-                            Evangelism Team.
-                        </p>
-                        <div class="row justify-content-center pt-4">
-                            <div class="col-6 inner">
-                                <a href="#" class="btn btn-secondary font-weight-bold shadow">GET IN TOUCH WITH US</a>
-                            </div>
+            <div class="col-lg-6 col-md-6 col-sm">
+                <h2 class="text-white font-weight-bold text-center me-auto"> Welcome to Kingdom Life</h2>
+                <div class="col-lg-12 col-md-12 col-sm inner p-3 mb-3">
+                    <p class="text-white text-wrap me-auto">
+                        We are a community of believers dedicated to spreading the love and message of Jesus Christ. We strive to create an atmosphere of acceptance, kindness, and support.
+                        Our fellowship acivities include a mix of traditional and contemporary worship, prophetic ministrations as well as expounding of scripture. We also offer a variety of small group Bible studies and prayer partnerships.
+                        If you are new to KINGDOM LIFE, we invite you to come and check us out. Our doors are always open and we would love to have you join us in worship and fellowship.
+                        For more information, please feel free to contact us or visit our social media platforms. We look forward to meeting you and growing in faith together.
+                        <br>
+                        <br>
+                        Blessings,
+                        <br>
+                        Evangelism Team.
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-8 pb-3 me-2">
+                            <a href="#" class="btn btn-secondary font-weight-bold shadow">GET IN TOUCH WITH US</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg col-md col-sm">
-                <div class="row justify-content-center">
-                    <div class="col-6 p-4">
-                        <img class="d-block img-fluid" width="100%" src="img/klm-HD.png" alt="Image">
-                    </div>
+            <div class="col-lg-6 col-md-6 col-sm">
+                <div class="justify-content-center">
+                    <img class="d-block img-fluid" width="70%" src="img/klm-HD.png" alt="Image">
                 </div>
             </div>
-
         </div>
     </div>
 </section>

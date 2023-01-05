@@ -1,22 +1,48 @@
-<?php
-// Connect to the database
-$db = new PDO("mysql:host=localhost;dbname=mydatabase", "username", "password");
-
-// Set up the SQL statement to insert the image data into the carousel table
-$sql = "INSERT INTO carousel (image_path, image_title, image_description) VALUES (?, ?, ?)";
-
-// Prepare the statement
-$stmt = $plug->prepare($sql);
-
-// Bind the values to the placeholder parameters
-$stmt->bindValue(1, $image_path);
-$stmt->bindValue(2, $image_title);
-$stmt->bindValue(3, $image_description);
-
-// Execute the statement
-$stmt->execute();
-
-// Close the database connection
-$plug = null;
-
-?>
+<div class="container-fluid-xl">
+  <div class="row justify-content-center">
+    <?php
+    $stmt = $plug->prepare("SELECT * FROM carousel");
+    $stmt->execute();
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $carousel_images = $stmt->fetchAll();
+    ?>
+    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <?php
+        $i = 0;
+        foreach ($carousel_images as $image) {
+          if ($i == 0) {
+            echo '<li data-bs-target="#carouselIndicators" data-bs-slide-to="' . $i . '" class="active"></li>';
+          } else {
+            echo '<li data-bs-target="#carouselIndicators" data-bs-slide-to="' . $i . '"></li>';
+          }
+          $i++;
+        }
+        ?>
+      </ol>
+      <div class="carousel-inner">
+        <?php
+        $i = 0;
+        foreach ($carousel_images as $image) {
+          if ($i == 0) {
+            echo '<div class="carousel-item active">';
+          } else {
+            echo '<div class="carousel-item">';
+          }
+          echo '<img class="d-block image-fluid" width="100%" height="500px" src="' . "gallery/" . $image['image_path'] . '" alt="' . $image['image_title'] . '">';
+          echo '</div>';
+          $i++;
+        }
+        ?>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>

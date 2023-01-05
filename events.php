@@ -1,4 +1,4 @@
-<section>
+<section class="overflow-scroll">
 
     <style>
         /* CSS for the timeline */
