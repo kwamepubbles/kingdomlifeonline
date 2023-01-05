@@ -1,6 +1,6 @@
 <!-- Footer -->
 <section class="footer-bg">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col">
 
@@ -11,7 +11,7 @@
 </main>
 <footer class="text-white text-center">
   <!--Grid container-->
-  <div class="container-fluid p-4">
+  <div class="container-fluid">
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
@@ -52,12 +52,12 @@
 
   <!-- Section: Social media -->
   <!-- Right -->
-  <div aria-label="social">
-    <div class="container-fluid">
-      <div class="row">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-8 p-4 m-4">
         <nav class="navbar">
-          <ul class="navbar mr-2 p-2 col-lg col-md col-sm shadow">
-            <h6 class="text-uppercase mb-0"><i class="fas fa-link"></i> Connect With Us :</h6>
+          <ul class="navbar col-lg col-md col-sm shadow">
+            <h2 class="text-white mb-0"><i class="fas fa-link"></i> Connect With Us :</h2>
             <li class="nav-item"><a href="" role="button" class="nav-link"><i class="fab fa-facebook-f me-3"></i></a></li>
             <li class="nav-item"><a href="" role="button" class="nav-link"><i class="fab fa-whatsapp"></i></a></li>
             <li class="nav-item"><a href="" role="button" class="nav-link"><i class="fab fa-telegram"></i></a></li>
@@ -81,4 +81,6 @@
 </footer>
 <!-- Footer -->
 </body>
+
+
 </html>

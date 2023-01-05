@@ -87,10 +87,10 @@
             color: rgba(0, 0, 0, 0.8);
         }
     </style>
-    <div class="container-xl">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col mx-auto">
-                <h2>Testimonials</h2>
+            <div class="col-8 mx-auto">
+                <h2>Testimonies</h2>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
