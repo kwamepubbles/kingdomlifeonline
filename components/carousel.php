@@ -1,3 +1,4 @@
+<!-- slider -->
 <div class="container-fluid-xl">
   <div class="row justify-content-center">
     <?php

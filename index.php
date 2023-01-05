@@ -78,7 +78,7 @@ include('components/carousel.php');
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 hstack gap-3">
                 <?php
                 try {
 

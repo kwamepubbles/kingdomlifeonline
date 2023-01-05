@@ -16,9 +16,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg shadow mx-background-top-linear ">
-    <div class="container-fluid">
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg shadow mx-background-top-linear">
+    <div class="container">
       <a class="navbar-brand" rel="nofollow" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
       <p>KINGDOM LIFE</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +33,10 @@
           <li class="nav-item">
             <i class="bi bi-headphones"></i>
             <a class="nav-link" href="podcast.php">Podcast</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-camera"></i>
+            <a class="nav-link" href="gallery.php">Gallery</a>
           </li>
           <li class="nav-item">
             <i class="bi bi-book"></i>
@@ -56,7 +60,4 @@
       </div>
     </div>
   </nav>
-</header>
-
-<body>
   <main>

@@ -62,19 +62,6 @@ nav {
   background-color: #3f293e;
 }
 
-
-/*--------------- 
-  Testimony
------------------*/
-.testimony-wrapper {
-  background-image: linear-gradient(
-    to right bottom,
-    #000000,
-    #6403a4a4,
-    #6767674a
-  );
-}
-
 #profile {
   background-color: unset;
 }
