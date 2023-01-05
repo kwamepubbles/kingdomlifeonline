@@ -1,4 +1,4 @@
-<section class="overflow-scroll">
+<section>
 
     <style>
         /* CSS for the timeline */
@@ -22,7 +22,7 @@
             transform: translateX(-50%);
             background: #034666;
             padding: 10px;
-            border-radius: 50%;
+            border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
         }
@@ -43,6 +43,17 @@
                 content.classList.toggle('visible');
             });
         });
+
+        var events = document.querySelectorAll(".event");
+
+        events.forEach(function(event) {
+            event.addEventListener("mouseover", function() {
+                event.style.backgroundColor = "lightgrey";
+            });
+            event.addEventListener("mouseout", function() {
+                event.style.backgroundColor = "white";
+            });
+        });
     </script>
     <?php
     // Connect to the database and retrieve events
@@ -56,16 +67,20 @@
     ?>
 
     <!-- HTML for the timeline container -->
-    <div id="timeline" class="container-fluid">
+    <div id="timeline" class="container">
         <div class="row justify-content-center">
 
             <!-- loop through events from the database and create a timeline entry for each -->
             <?php foreach ($events as $event) : ?>
-                <div class="timeline-entry">
-                    <div class="timeline-date"><?php echo $event['date']; ?></div><br>
-                    <div class="timeline-content shadow">
-                        <h3><?php echo $event['title']; ?></h3><br>
-                        <p><?php echo $event['description']; ?></p>
+                <div class="col-6 card mt-4">
+                    <div class="card-body">
+                        <div class="timeline-entry p-2 mt-4">
+                            <div class="timeline-date"><?php echo $event['date']; ?></div><br>
+                            <div class="timeline-content ">
+                                <h3><?php echo $event['title']; ?></h3><br>
+                                <p><?php echo $event['description']; ?></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>

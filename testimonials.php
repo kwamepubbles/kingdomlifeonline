@@ -180,7 +180,6 @@
                 } catch (PDOException $e) {
                     exit("Error: " . $e->getMessage());
                 }
-
                 ?>
 
                 <div class="form-group">

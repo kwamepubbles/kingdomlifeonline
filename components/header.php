@@ -15,10 +15,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
-  <script src="https://widget.northeurope.cloudapp.azure.com:9443/v0.1.0/mobile-money-widget-mtn.js"></script>
 </head>
 <header>
-  <nav class="navbar navbar-expand-lg shadow mx-background-top-linear fixed-top">
+  <nav class="navbar navbar-expand-lg shadow mx-background-top-linear ">
     <div class="container-fluid">
       <a class="navbar-brand" rel="nofollow" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
       <p>KINGDOM LIFE</p>
