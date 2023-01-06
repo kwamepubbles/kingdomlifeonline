@@ -152,9 +152,9 @@
                 try {
                     $msg = "";
                     if (isset($_POST['submit'])) {
-                        $message = htmlspecialchars($_POST['message']);
                         $fname = htmlspecialchars($_POST['fname']);
                         $email = htmlspecialchars($_POST['email']);
+                        $message = htmlspecialchars($_POST['message']);
                         $checked = htmlspecialchars($_POST['checked']);
                         $query = $plug->prepare("SELECT * FROM testimony WHERE email=:email");
                         $query->bindParam("email", $email, PDO::PARAM_STR);
@@ -165,7 +165,7 @@
                         }
 
                         if ($query->rowCount() == 0) {
-                            $query = $plug->prepare("INSERT INTO testimony (message,fname,email,checked) VALUES (:message,:fname,:email,:checked)");
+                            $query = $plug->prepare("INSERT INTO testimony (fname,email,message,checked) VALUES (:fname,:email,:message,:checked)");
                             $query->bindParam("message", $message, PDO::PARAM_STR);
                             $query->bindParam("fname", $fname, PDO::PARAM_STR);
                             $query->bindParam("email", $email, PDO::PARAM_STR);

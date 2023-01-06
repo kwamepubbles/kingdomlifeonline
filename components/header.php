@@ -16,10 +16,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg shadow mx-background-top-linear">
+  <nav class="navbar sticky-top navbar-expand-lg shadow">
     <div class="container">
-      <a class="navbar-brand" rel="nofollow" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
+      <a class="navbar-brand" href="index.php"><img src="./img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
       <p>KINGDOM LIFE</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,12 +52,14 @@
             <a class="nav-link" href="support.php">Seeds & Offering</a>
           </li>
         </ul>
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <i class="fas fa-fax"></i>
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+        <nav class="navbar ms-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <i class="fas fa-fax"></i>
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </nav>
