@@ -1,6 +1,6 @@
 <!-- slider -->
-<div class="container-fluid-xl">
-  <div class="row justify-content-center">
+<div class="container-fluid">
+  <div class="p-0 m-0">
     <?php
     $stmt = $plug->prepare("SELECT * FROM carousel");
     $stmt->execute();
@@ -47,3 +47,4 @@
       </button>
     </div>
   </div>
+</div>
