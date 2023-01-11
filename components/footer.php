@@ -60,8 +60,8 @@
     <div class="row justify-content-center">
       <div class="social">
         <nav class="navbar shadow">
-          <ul class="navbar col-sm-8 pt-1 ms-4 me-4">
-            <h2 class="text-white p-0 m-0"><i class="fas fa-link"></i> Connect With Us :</h2>
+          <ul class="navbar list-unstyled col-sm-8 pt-1 ms-4 me-4">
+            <h2 class="p-0 m-0"><i class="fas fa-link"></i> Connect With Us :</h2>
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-whatsapp"></i></a></li>
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-telegram"></i></a></li>
@@ -84,7 +84,8 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
-
 
 </html>
