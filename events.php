@@ -30,8 +30,8 @@
     }
     ?>
     <!-- HTML for the timeline container -->
-    <div class="container-fluid" id="timeline">
-        <div class="row justify-content-start pt-4 m-auto">
+    <div class="container-fluid pt-4" id="timeline">
+        <div class="row justify-content-center m-auto">
             <!-- loop through events from the database and create a timeline entry for each -->
             <?php foreach ($events as $event) : ?>
                 <div class="row">
@@ -43,7 +43,7 @@
                 <div class="col-sm-12 col-md-8 col-lg-6 pt-4 m-auto">
                     <div class="timeline-entry p-2">
                         <div class="timeline-content m-auto">
-                            <h3 class="text-center"><?php echo $event['title']; ?></h3><br>
+                            <h3 class="text-center text-uppercase"><?php echo $event['title']; ?></h3><br>
                             <h1 class="timeline-date text-center"><?php echo $event['date']; ?></h1><br>
                             <p class="text-center"><?php echo $event['description']; ?></p>
                         </div>

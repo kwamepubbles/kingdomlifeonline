@@ -6,34 +6,9 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
-  color: #333;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  position: relative;
-  margin: 30px 0 60px;
-}
-
-h2::after {
-  content: "";
-  width: 100px;
-  position: absolute;
-  margin: 0 auto;
-  height: 3px;
-  background: #8fbc54;
-  left: 0;
-  right: 0;
-  bottom: -10px;
-}
-
 .nav-bar ul .nav-item .nav-link :hover {
   color: #bd97d6;
   font-size: auto;
-}
-#nav-bg{
-  background-color: #6f07b4;
 }
 
 div a {
@@ -51,38 +26,6 @@ nav p,
 nav button span {
   text-align: center;
   color: #5e0606;
-}
-
-nav {
-  background-color: RGB(139, 0, 139);
-}
-
-.about,
-.podcast,
-.support-bg,
-.library,
-.mission {
-  background-color: #3f293e;
-}
-
-#profile {
-  background-color: unset;
-}
-
-#post {
-  text-align: center;
-  background-color: #380958;
-  width: 100%;
-  color: white;
-}
-
-.users h4,
-.users p,
-.users span,
-.darker h4,
-.darker span {
-  display: inline;
-  color: white;
 }
 
 .admin {
@@ -127,10 +70,6 @@ div a {
   text-decoration: none;
 }
 
-.social{
-  background-color: #380958;
-}
-
  /* CSS for the timeline */
  #timeline {
   position: relative;
@@ -150,7 +89,7 @@ div a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: #034666;
+  background: #08010e;
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;

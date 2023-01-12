@@ -89,7 +89,7 @@
     </style>
     <div class="container-fluid pt-4">
         <div class="row justify-content-center ">
-            <div class=" col-sm-12 col-md-8 col-lg-6 m-auto">
+            <div class=" col-sm-12 col-md-8 col-lg-8 m-auto">
                 <h2>Testimonies</h2>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
@@ -100,7 +100,7 @@
                             <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
                         </div>
                         <div class="carousel-item">
-                            <div class="img-box"><img src="img/8.jpeg" alt="" ></div>
+                            <div class="img-box"><img src="img/8.jpeg" alt=""></div>
                             <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
                             <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
                         </div>
@@ -110,15 +110,7 @@
                             <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
                         </div>
                     </div>
-                    <!-- Carousel controls 
-                    <button class="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
-                        <i class="fa fa-angle-left"></i>
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
-                        <i class="fa fa-angle-right"></i>
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>-->
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -139,10 +131,10 @@
 </section>
 
 <div class="row justify-content-center">
-    <div class="col-12">
-        <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="col-12 mb-4">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" style="background-color: #6f07b4;">
             <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="offcanvasLabel">TESTIMONY</h2>
+            <h2 class="offcanvas-title m-auto text-white" id="offcanvasLabel">TESTIMONY</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -181,30 +173,30 @@
                     exit("Error: " . $e->getMessage());
                 }
                 ?>
-
+                
                 <div class="form-group">
                     <?= $msg; ?>
                 </div>
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
                     <div class="form-group">
-                        <label for="name">Full Name:</label>
+                        <label for="name" class="text-white">Full Name:</label>
                         <input type="text" name="fname" id="fullname" class="form-control text-capitalize" required>
                     </div><br>
                     <div class="form-group">
-                        <label for="email">E-mail:</label>
+                        <label for="email" class="text-white">E-mail:</label>
                         <input type="email" name="email" id="email" class="form-control text-capitalize" required>
                     </div><br>
                     <div class="form-group">
-                        <label for="message">Message:</label>
+                        <label for="message" class="text-white">Message:</label>
                         <textarea name="message" id="msg" cols="30" rows="10" class="form-control text-sentence" required></textarea>
                     </div><br>
                     <div class="form-inline">
-                        <label>Send me event notifications via E-mail</label>
+                        <label class="text-white">Send me event notifications via E-mail</label>
                         <input type="checkbox" name="checked" id="checkbx" value="Yes" class="mr-1">
                     </div>
                     <div class="row justify-content-center">
                         <div class="form-group text-center col-4 mt-4">
-                            <button type="submit" name="submit" id="post" class="btn">Submit <i class="bi bi-send-fill"></i></button>
+                            <button type="submit" name="submit" class="btn btn-success">Submit <i class="bi bi-send-fill"></i></button>
                         </div>
                     </div>
                 </form>
