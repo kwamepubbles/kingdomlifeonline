@@ -25,7 +25,7 @@
   </style>
   <footer>
     <!--Grid container-->
-    <div class="container-fluid text-white" style="background-color: #8f6304;">
+    <div class="container-fluid pb-4 text-white" style="background-color: #8f6304;">
       <!--Grid row-->
       <div class="row justify-content-center pt-2 m-auto">
         <!--Grid column-->
