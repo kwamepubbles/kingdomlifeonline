@@ -40,7 +40,7 @@
             min-height: 290px;
         }
 
-         .carousel .carousel-item .img-box {
+        .carousel .carousel-item .img-box {
             width: 135px;
             height: 135px;
             margin: 0 auto;
@@ -87,9 +87,9 @@
             color: rgba(0, 0, 0, 0.8);
         }
     </style>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8 mx-auto">
+    <div class="container-fluid pt-4">
+        <div class="row justify-content-center ">
+            <div class=" col-sm-12 col-md-8 col-lg-6 m-auto">
                 <h2>Testimonies</h2>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
@@ -128,7 +128,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                     <div class="row justify-content-center">
-                        <button class=" col-4 btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                        <button class=" col-sm-12 col-md-6 col-lg-6 btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                             Share Testimony
                         </button>
                     </div>

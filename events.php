@@ -23,7 +23,6 @@
     <?php
     // Connect to the database and retrieve events
     try {
-        $plug = new PDO("mysql:host=" . HOST . ";dbname=" . DATABASE, USER, PASSWORD);
         $stmt = $plug->query('SELECT * FROM events ORDER BY date ASC');
         $events = $stmt->fetchAll();
     } catch (PDOException $e) {
@@ -31,18 +30,26 @@
     }
     ?>
     <!-- HTML for the timeline container -->
-    <div id="timeline" class="container-fluid">
-        <div class="row justify-content-center">
-
+    <div class="container-fluid" id="timeline">
+        <div class="row justify-content-start pt-4 m-auto">
             <!-- loop through events from the database and create a timeline entry for each -->
             <?php foreach ($events as $event) : ?>
-                <div class="col-6 card mt-4">
-                    <div class="card-body">
-                        <div class="timeline-entry p-2 mt-4">
-                            <div class="timeline-date"><?php echo $event['date']; ?></div><br>
-                            <div class="timeline-content ">
-                                <h3><?php echo $event['title']; ?></h3><br>
-                                <p><?php echo $event['description']; ?></p>
+                <div class="row">
+                    <h2 class="font-weight-bold text-center">Upcoming Events</h2>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6 p-0 m-auto" style="font-size: 200px;">
+                    <p class="text-center"><i class="fa-solid fa-calendar-days"></i></p>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-6 pt-4 m-auto">
+                    <div class="timeline-entry p-2">
+                        <div class="timeline-content m-auto">
+                            <h3 class="text-center"><?php echo $event['title']; ?></h3><br>
+                            <h1 class="timeline-date text-center"><?php echo $event['date']; ?></h1><br>
+                            <p class="text-center"><?php echo $event['description']; ?></p>
+                        </div>
+                        <div class="row justify-content-center m-auto">
+                            <div class=" col-4 p-2">
+                                <a href="#" class="btn btn-primary font-weight-bold ">Click here to register</a>
                             </div>
                         </div>
                     </div>

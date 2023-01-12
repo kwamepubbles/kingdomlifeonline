@@ -28,12 +28,12 @@ h2::after {
   bottom: -10px;
 }
 
-#nav-bg ul .nav-item a i {
+.nav-bar ul .nav-item .nav-link :hover {
   color: #bd97d6;
   font-size: auto;
 }
 #nav-bg{
-  background-color: #380958;
+  background-color: #6f07b4;
 }
 
 div a {
