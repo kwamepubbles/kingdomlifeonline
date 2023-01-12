@@ -3,8 +3,7 @@ include('components/header.php');
 ?>
 <section class="pray">
     <div class="container-fluid">
-
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-3 p-0 m-0">
                 <img src="img/3.jpeg" class="img-fluid" alt="...">
             </div>
@@ -18,15 +17,13 @@ include('components/header.php');
                 <img src="img/couple-husband-wife.jpg" class="img-fluid" alt="...">
             </div>
         </div>
-
-        <div class="container-fluid">
+        <div class="container-fluid pb-4">
             <div class="row justify-content-center">
                 <div class="col-6 pt-5">
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="$_POST">
                         <div class="border shadow p-3 m-0">
                             <div class="p-2 text-center">
-                                <i class="fas fa-praying-hands"></i><br>
-                                <h2>Let's Pray </h2>
+                                <h2><i class="fas fa-praying-hands"></i><br>Let's Pray </h2>
                             </div>
                             <div class="form-floating ">
                                 <div class=" col-3 mb-3 input-group">

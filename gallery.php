@@ -116,9 +116,13 @@ require_once('scripts/db.config.php');
 </script>
 <section>
     <div class="container-fluid">
+        <div class=" row justify-content-center">
+            <div class="col-12 text-bg-light pt-4">
+                <h2>Gallery</h2>
+            </div>
+        </div>
         <div class="container">
-
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-bs-toggle="modal" data-title="" data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-bs-target="#image-gallery">
                         <img class="img-thumbnail" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Another alt text">
