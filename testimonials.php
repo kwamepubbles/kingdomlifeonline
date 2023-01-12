@@ -40,7 +40,7 @@
             min-height: 290px;
         }
 
-        .carousel .carousel-item .img-box {
+         .carousel .carousel-item .img-box {
             width: 135px;
             height: 135px;
             margin: 0 auto;
@@ -100,7 +100,7 @@
                             <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
                         </div>
                         <div class="carousel-item">
-                            <div class="img-box"><img src="img/8.jpeg" alt=""></div>
+                            <div class="img-box"><img src="img/8.jpeg" alt="" ></div>
                             <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
                             <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
                         </div>

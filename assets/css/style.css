@@ -130,6 +130,40 @@ div a {
 .social{
   background-color: #380958;
 }
+
+ /* CSS for the timeline */
+ #timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.timeline-entry {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timeline-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #034666;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
 /*
 --------------------------------------------
 events
