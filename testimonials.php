@@ -29,7 +29,7 @@
         }
 
         #myCarousel {
-            padding: 0 100px;
+            padding: 0 10px;
         }
 
         .carousel .carousel-item {
@@ -128,79 +128,79 @@
             </div>
         </div>
     </div>
-</section>
 
-<div class="row justify-content-center">
-    <div class="col-12 mb-4">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" style="background-color: #6f07b4;">
-            <div class="offcanvas-header">
-            <h2 class="offcanvas-title m-auto text-white" id="offcanvasLabel">TESTIMONY</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <?php
-                require_once('scripts/db.config.php');
+    <div class="row justify-content-center">
+        <div class="col-12 mb-4">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" style="background-color: #6f07b4;">
+                <div class="offcanvas-header">
+                    <h2 class="offcanvas-title m-auto text-white" id="offcanvasLabel">TESTIMONY</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <?php
+                    require_once('scripts/db.config.php');
 
-                try {
-                    $msg = "";
-                    if (isset($_POST['submit'])) {
-                        $fname = htmlspecialchars($_POST['fname']);
-                        $email = htmlspecialchars($_POST['email']);
-                        $message = htmlspecialchars($_POST['message']);
-                        $checked = htmlspecialchars($_POST['checked']);
-                        $query = $plug->prepare("SELECT * FROM testimony WHERE email=:email");
-                        $query->bindParam("email", $email, PDO::PARAM_STR);
-                        $query->execute();
-
-                        if ($query->rowCount() > 0) {
-                            $msg = '<div class="alert alert-danger alert-dismissible fade show" role="alert">The email address is already registered!</p>';
-                        }
-
-                        if ($query->rowCount() == 0) {
-                            $query = $plug->prepare("INSERT INTO testimony (fname,email,message,checked) VALUES (:fname,:email,:message,:checked)");
-                            $query->bindParam("message", $message, PDO::PARAM_STR);
-                            $query->bindParam("fname", $fname, PDO::PARAM_STR);
+                    try {
+                        $msg = "";
+                        if (isset($_POST['submit'])) {
+                            $fname = htmlspecialchars($_POST['fname']);
+                            $email = htmlspecialchars($_POST['email']);
+                            $message = htmlspecialchars($_POST['message']);
+                            $checked = htmlspecialchars($_POST['checked']);
+                            $query = $plug->prepare("SELECT * FROM testimony WHERE email=:email");
                             $query->bindParam("email", $email, PDO::PARAM_STR);
-                            $query->bindParam("checked", $checked, PDO::PARAM_STR);
-                            $result = $query->execute();
+                            $query->execute();
 
-                            if ($result) {
-                                $msg = '<div class="alert alert-success alert-dismissible fade show" role="alert">Testimony successfully submitted</div>';
+                            if ($query->rowCount() > 0) {
+                                $msg = '<div class="alert alert-danger alert-dismissible fade show" role="alert">The email address is already registered!</p>';
+                            }
+
+                            if ($query->rowCount() == 0) {
+                                $query = $plug->prepare("INSERT INTO testimony (fname,email,message,checked) VALUES (:fname,:email,:message,:checked)");
+                                $query->bindParam("message", $message, PDO::PARAM_STR);
+                                $query->bindParam("fname", $fname, PDO::PARAM_STR);
+                                $query->bindParam("email", $email, PDO::PARAM_STR);
+                                $query->bindParam("checked", $checked, PDO::PARAM_STR);
+                                $result = $query->execute();
+
+                                if ($result) {
+                                    $msg = '<div class="alert alert-success alert-dismissible fade show" role="alert">Testimony successfully submitted</div>';
+                                }
                             }
                         }
+                    } catch (PDOException $e) {
+                        exit("Error: " . $e->getMessage());
                     }
-                } catch (PDOException $e) {
-                    exit("Error: " . $e->getMessage());
-                }
-                ?>
-                
-                <div class="form-group">
-                    <?= $msg; ?>
-                </div>
-                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
+                    ?>
+
                     <div class="form-group">
-                        <label for="name" class="text-white">Full Name:</label>
-                        <input type="text" name="fname" id="fullname" class="form-control text-capitalize" required>
-                    </div><br>
-                    <div class="form-group">
-                        <label for="email" class="text-white">E-mail:</label>
-                        <input type="email" name="email" id="email" class="form-control text-capitalize" required>
-                    </div><br>
-                    <div class="form-group">
-                        <label for="message" class="text-white">Message:</label>
-                        <textarea name="message" id="msg" cols="30" rows="10" class="form-control text-sentence" required></textarea>
-                    </div><br>
-                    <div class="form-inline">
-                        <label class="text-white">Send me event notifications via E-mail</label>
-                        <input type="checkbox" name="checked" id="checkbx" value="Yes" class="mr-1">
+                        <?= $msg; ?>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="form-group text-center col-4 mt-4">
-                            <button type="submit" name="submit" class="btn btn-success">Submit <i class="bi bi-send-fill"></i></button>
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="text-white">Full Name:</label>
+                            <input type="text" name="fname" id="fullname" class="form-control text-capitalize" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email" class="text-white">E-mail:</label>
+                            <input type="email" name="email" id="email" class="form-control text-capitalize" required>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="message" class="text-white">Message:</label>
+                            <textarea name="message" id="msg" cols="30" rows="10" class="form-control text-sentence" required></textarea>
+                        </div><br>
+                        <div class="form-inline">
+                            <label class="text-white">Send me event notifications via E-mail</label>
+                            <input type="checkbox" name="checked" id="checkbx" value="Yes" class="mr-1">
                         </div>
-                    </div>
-                </form>
+                        <div class="row justify-content-center">
+                            <div class="form-group text-center col-4 mt-4">
+                                <button type="submit" name="submit" class="btn btn-success">Submit <i class="bi bi-send-fill"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>

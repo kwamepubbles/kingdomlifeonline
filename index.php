@@ -11,17 +11,17 @@ include('components/carousel.php');
 <section>
     <div class="container-fluid mt-4">
         <h2 class="font-weight-bold m-auto "> Our Programs</h2>
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-6 inner m-auto">
+        <div class="row justify-content-evenly">
+            <div class="col-sm-12 col-md-6 col-lg-6 m-auto">
                 <a href="#!"><img src="img/sots.jpg" class="d-block w-50 h-auto m-auto p-3" alt="..."></a>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 inner m-auto">
+            <div class="col-sm-12 col-md-6 col-lg-6 m-auto">
                 <h3 class="text-center">SCHOOL OF THE SPIRIT</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-6 col-lg-6 inner m-auto">
+        <div class="row justify-content-evenly">
+            <div class="col-sm-12 col-md-6 col-lg-6 m-auto">
                 <h3 class="text-center">SOLUTION NIGHT</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
             </div>
@@ -33,9 +33,9 @@ include('components/carousel.php');
 </section>
 <section>
     <div class="container-fluid pt-4">
-        <h2 class="font-weight-bold m-auto"> Daily Nuggets</h2>
-        <div class="row justify-content-center pt-4 m-auto"><br><br>
-            <div class="col-sm-12 col-md-6 col-lg-6 p-0" style="font-size: 200px; color:blueviolet;">
+        <h2 class="font-weight-bold m-auto"> Daily Nuggets</h2><br>
+        <div class="row justify-content-evenly pt-4 m-auto">
+            <div class="col-sm-12 col-md-6 col-lg-6 p-0" style="font-size: 180px; color:blueviolet;">
                 <p class="text-center d-block w-50 h-auto m-auto"><i class="fa-solid fa-scroll"></i></p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 p-0 m-auto">

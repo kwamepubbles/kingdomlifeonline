@@ -25,11 +25,11 @@
   </style>
   <footer>
     <!--Grid container-->
-    <div class="container-fluid pb-4 text-white" style="background-color: #8f6304;">
+    <div class="container-fluid text-white" style="background-color: #8f6304;">
       <!--Grid row-->
       <div class="row justify-content-center pt-2 m-auto">
         <!--Grid column-->
-        <div class="col-sm col-md col-lg  text-center">
+        <div class="col-sm-12 col-md-4 col-lg-4  text-center m-auto">
           <div><i class="fas fa-church"></i></div>
           <h6 class="text-uppercase">Ministrations</h6>
           <ul class="list-unstyled m-auto">
@@ -40,10 +40,10 @@
         </div>
         <!--Grid column-->
         <!--Grid column-->
-        <div class="col-sm col-md col-lg text-center">
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center m-auto">
           <div><i class="fas fa-music"></i></div>
           <h6 class="text-uppercase">Media </h6>
-          <ul class="list-unstyled m-auto">
+          <ul class="list-unstyled">
             <li><a href="#" class="text-white">Gallery</a></li>
             <li><a href="#" class="text-white">Podcasts</a></li>
             <li><a href="#" class="text-white">Library</a></li>
@@ -51,10 +51,10 @@
         </div>
         <!--Grid column-->
         <!--Grid column-->
-        <div class="col-sm col-md col-lg text-center">
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center m-auto">
           <div><i class="fas fa-headset"></i></div>
           <h6 class="text-uppercase text-left">Contact </h6>
-          <ul class="list-unstyled m-auto">
+          <ul class="list-unstyled">
             <li><a><i class="fas fa-home"></i> New York, NY 10012, US</a></li>
             <li><a><i class="fas fa-envelope"></i> info@example.com</a></li>
             <li><a><i class="fas fa-phone"></i> + 01 234 567 88</a></li>
@@ -68,11 +68,13 @@
     <!-- Section: Social media -->
     <!-- Right -->
     <div class="container-fluid text-white" style="background-color: #380958;">
-      <div class="row justify-content-center">
-        <div class="social">
+      <div class="row justify-content-evenly m-auto">
+        <div class="col-sm-12 col-md-12 col-lg-6 ">
+          <h2 class="p-0 m-0 text-white"><i class="fas fa-link"></i> Connect With Us :</h2>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 m-auto">
           <nav class="navbar">
-            <ul class="navbar list-unstyled col-10 pt-1 ms-4 me-4">
-              <h2 class="p-0 m-0 text-white"><i class="fas fa-link"></i> Connect With Us :</h2>
+            <ul class="navbar list-unstyled col-6 m-auto">
               <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
               <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-whatsapp"></i></a></li>
               <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-telegram"></i></a></li>

@@ -37,7 +37,7 @@
                 <div class="row">
                     <h2 class="font-weight-bold text-center">Upcoming Events</h2>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-6 p-0 m-auto" style="font-size: 200px;">
+                <div class="col-sm-12 col-md-8 col-lg-6 p-0 m-auto" style="font-size: 180px;">
                     <p class="text-center"><i class="fa-solid fa-calendar-days"></i></p>
                 </div>
                 <div class="col-sm-12 col-md-8 col-lg-6 pt-4 m-auto">
