@@ -70,7 +70,7 @@
     <div class="container-fluid text-white" style="background-color: #380958;">
       <div class="row justify-content-evenly m-auto">
         <div class="col-sm-12 col-md-12 col-lg-6 ">
-          <h2 class="p-0 m-0 text-white"><i class="fas fa-link"></i> Connect With Us :</h2>
+          <h2 class="p-0 m-0  text-white"><i class="fas fa-link"></i> Connect With Us :</h2>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6 m-auto">
           <nav class="navbar">

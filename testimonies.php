@@ -1,37 +1,6 @@
 <!-- testimony Body -->
 <section>
     <style>
-        h2 {
-            color: #333;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: "Roboto", sans-serif;
-            font-weight: bold;
-            position: relative;
-            margin: 30px 0 60px;
-        }
-
-        h2::after {
-            content: "";
-            width: 100px;
-            position: absolute;
-            margin: 0 auto;
-            height: 3px;
-            background: #8fbc54;
-            left: 0;
-            right: 0;
-            bottom: -10px;
-        }
-
-        .col-center {
-            margin: 0 auto;
-            float: none !important;
-        }
-
-        #myCarousel {
-            padding: 0 10px;
-        }
-
         .carousel .carousel-item {
             color: #999;
             font-size: 14px;
@@ -57,7 +26,7 @@
         }
 
         .carousel .testimonial {
-            padding: 30px 0 10px;
+            padding: 30px 0 30px;
         }
 
         .carousel .overview {
@@ -68,28 +37,10 @@
             text-transform: uppercase;
             color: #7AA641;
         }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 40px;
-            height: 40px;
-            margin-top: -20px;
-            top: 50%;
-            background: none;
-        }
-
-        .carousel-control-prev i,
-        .carousel-control-next i {
-            font-size: 40px;
-            line-height: 20px;
-            position: absolute;
-            display: inline-block;
-            color: rgba(0, 0, 0, 0.8);
-        }
     </style>
-    <div class="container-fluid pt-4">
+    <div class="container pt-4">
         <div class="row justify-content-center ">
-            <div class=" col-sm-12 col-md-8 col-lg-8 m-auto">
+            <div class=" col-sm-12 col-md-8 col-lg-8 p-0 m-auto">
                 <h2>Testimonies</h2>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
@@ -119,8 +70,8 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                    <div class="row justify-content-center">
-                        <button class=" col-sm-12 col-md-6 col-lg-6 btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                    <div class="row justify-content-center pt-4">
+                        <button class=" col-sm-6 col-md-6 col-lg-6 m-auto btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                             Share Testimony
                         </button>
                     </div>

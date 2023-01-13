@@ -11,7 +11,8 @@ include('components/header.php');
                 </div>
                 <div class=" row justify-content-center m-auto">
                     <div class="col-8  pt-4">
-                        <p class="text-center"><i><h1>Page under construction, come back later...</h1></i></p>
+                        <p style="font-size: 150px; color:blueviolet;" class="text-center m-auto"><i class="fa-solid fa-triangle-exclamation"></i></p>
+                        <p class="text-center"><h1>Page under construction, come back later...</h1> Go to <a href="index.php">Home page</a></p>
                     </div>
                 </div>
             </div>

@@ -4,12 +4,12 @@ include('components/header.php');
 <section>
     <div class="container-fluid">
         <div class="row justify-content-center d-inline">
-            <div class="col-lg-8 col-md col-sm m-auto">
+            <div class="col-sm-8 col-md-8 col-lg-8 m-auto">
                 <div class="row justify-content-center">
                     <h2 class="font-weight-bold m-auto "> Welcome to Kingdom Life</h2>
                 </div>
                 <div class="col inner p-4 mb-3">
-                    <div class="col-sm-8 col-6 m-auto">
+                    <div class="col-sm-8 col-md-8 col-lg-8 m-auto">
                         <img class="d-block w-75 h-auto m-auto p-3" src="img/klm-HD.png" alt="...">
                     </div>
                     <p>
@@ -24,10 +24,19 @@ include('components/header.php');
                         Evangelism Team.
                     </p>
                     <div class="row justify-content-center">
-                        <div class="col-4 d-block p-3 m-auto">
+                        <div class="col-4 p-0 m-auto">
                             <a href="#" class="btn btn-secondary font-weight-bold ">GET IN TOUCH WITH US</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 m-auto">
+               
+                <div class="col inner p-4 mb-3">
+                    <div class="col-sm-8 col-6 m-auto">
+                        <img class="d-block w-75 h-auto m-auto p-3" src="img/klm-HD.png" alt="...">
+                    </div>
+                   
                 </div>
             </div>
         </div>

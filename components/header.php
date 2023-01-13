@@ -17,16 +17,16 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #6f07b4;">
+  <nav class="navbar sticky-top navbar-expand-md navbar-expand-lg " style="background-color: #6f07b4;">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php"><img src="./img/klm-HD-icon.png" class="d-inline-block align-text-center rounded-circle"></a>
-      <p class="text-white">KINGDOM LIFE</p>
+      <p class="text-white p-0 m-auto">KINGDOM LIFE</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <div class="justify-content-center m-auto">
-          <ul class="navbar-nav list-unstyled">
+          <ul class="navbar-nav list-unstyled m-auto">
             <li class="nav-item">
               <a class="nav-link text-white" aria-current="page" href="index.php"><i class="bi bi-house"></i>Home</a>
             </li>

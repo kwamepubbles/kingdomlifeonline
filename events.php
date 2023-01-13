@@ -37,11 +37,11 @@
                 <div class="row">
                     <h2 class="font-weight-bold text-center">Upcoming Events</h2>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-6 p-0 m-auto" style="font-size: 180px;">
-                    <p class="text-center"><i class="fa-solid fa-calendar-days"></i></p>
+                <div class="col-sm-12 col-md-6 col-lg-6 p-0 m-auto" style="background-color:blueviolet;">
+                    <p class="text-center" style="font-size: 180px;"><i class="fa-solid fa-calendar-days"></i></p>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-6 pt-4 m-auto">
-                    <div class="timeline-entry p-2">
+                <div class="col-sm-12 col-md-6 col-lg-6 pt-4 m-auto">
+                    <div class="timeline-entry p-0">
                         <div class="timeline-content m-auto">
                             <h3 class="text-center text-uppercase"><?php echo $event['title']; ?></h3><br>
                             <h1 class="timeline-date text-center"><?php echo $event['date']; ?></h1><br>
