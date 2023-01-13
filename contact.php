@@ -9,8 +9,8 @@ include('components/header.php');
                     <h2 class="font-weight-bold m-auto "> Welcome to Kingdom Life</h2>
                 </div>
                 <div class="col inner p-4 mb-3">
-                   <div class="col-6 m-auto">
-                        <img class="d-block w-50 h-auto m-auto p-3" src="img/klm-HD.png" alt="...">
+                    <div class="col-sm-8 col-6 m-auto">
+                        <img class="d-block w-75 h-auto m-auto p-3" src="img/klm-HD.png" alt="...">
                     </div>
                     <p>
                         We are a community of believers dedicated to spreading the love and message of Jesus Christ. We strive to create an atmosphere of acceptance, kindness, and support.
