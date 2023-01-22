@@ -12,7 +12,7 @@ include('scripts/db.config.php');
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row justify-content-center" style="height: min-content;">
+            <div class="row justify-content-center">
                 <div class="col-md-4 col-lg-4">
                     <div class="card border shadow " style="width: 18rem; height:100vh; margin-left:-20px; background-color:blueviolet;">
 
@@ -20,7 +20,7 @@ include('scripts/db.config.php');
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 px-4 m-auto vstack gap-3">
+                <div class="col-sm-12 col-md-6 col-lg-6 vstack">
                     <?php
                     try {
                         $stmt = $plug->prepare("SELECT * FROM posts ORDER BY date DESC");

@@ -9,7 +9,7 @@ include('components/carousel.php');
 ?>
 
 <section>
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
         <h2 class="font-weight-bold m-auto "> Our Programs</h2>
         <div class="row justify-content-center pt-4">
             <div class="col-sm-12 col-md-6 col-lg-6 m-auto">

@@ -4,15 +4,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.nav-bar ul .nav-item .nav-link :hover {
-  color: #bd97d6;
-  font-size: auto;
-}
 .navbar-expand-lg .navbar-nav .nav-link{
   padding-right: 1rem!important;
   font-size: 1.1rem;
   text-transform: capitalize;
 }
+
 div a {
   text-decoration-style: none;
 }
@@ -22,13 +19,6 @@ nav a img {
   height: 50px;
 }
 
-nav ul,
-nav p,
-.nav-item a,
-nav button span {
-  text-align: center;
-  color: #fff;
-}
 
 label {
   color: rgb(255, 255, 255);

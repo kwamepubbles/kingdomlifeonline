@@ -1,4 +1,3 @@
-<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,15 +11,15 @@
   <link href="assets/fontawesome6/css/fontawesome.css" rel="stylesheet">
   <link href="assets/fontawesome6/css/brands.css" rel="stylesheet">
   <link href="assets/fontawesome6/css/solid.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <link rel="stylesheet" href="assets/css/style.css">
-<!------ Include the above in your HEAD tag ---------->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!------ Include the above in your HEAD tag ---------->
 </head>
 
 <body>
   <nav class="navbar sticky-top navbar-expand-md navbar-expand-lg " style="background-color: #6f07b4;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.php"><img src="./img/klm-HD-icon.png" class="d-inline-block align-text-center rounded-circle"></a>
+      <a class="navbar-brand" href="index.php"><img src="./img/klm-HD-icon.png" class="d-block  rounded-circle"></a>
       <p class="text-white p-0 m-auto">KINGDOM LIFE</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
