@@ -13,8 +13,8 @@ include('scripts/db.config.php');
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-4 col-lg-4">
-                    <div class="card border shadow " style="width: 18rem; height:100vh; margin-left:-20px; background-color:blueviolet;">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border shadow " style="width: auto; height:100vh; margin-left:-20px; background-color:blueviolet;">
 
 
                     </div>

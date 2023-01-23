@@ -18,7 +18,7 @@
 
 <body>
   <nav class="navbar sticky-top navbar-expand-md navbar-expand-lg " style="background-color: #6f07b4;">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="index.php"><img src="./img/klm-HD-icon.png" class="d-block  rounded-circle"></a>
       <p class="text-white p-0 m-auto">KINGDOM LIFE</p>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

@@ -30,26 +30,27 @@
     }
     ?>
     <!-- HTML for the timeline container -->
-    <div class="container-fluid pt-4" id="timeline">
-        <div class="row justify-content-center m-auto">
+    <div class="container mt-4" id="timeline">
+        <div class="row">
+            <h2 class="font-weight-bold text-center">Upcoming Events</h2>
+        </div>
+        <div class="row justify-content-center">
             <!-- loop through events from the database and create a timeline entry for each -->
             <?php foreach ($events as $event) : ?>
-                <div class="row">
-                    <h2 class="font-weight-bold text-center">Upcoming Events</h2>
+                <div class="col-sm-12 col-md-4 col-lg-4 p-0">
+                    <p class="text-center" style="font-size: 14rem; color:blueviolet;"><i class="fa-solid fa-calendar-days"></i></p>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 p-0 m-auto" style="background-color:blueviolet;">
-                    <p class="text-center" style="font-size: 180px;"><i class="fa-solid fa-calendar-days"></i></p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 pt-4 m-auto">
-                    <div class="timeline-entry p-0">
-                        <div class="timeline-content m-auto">
-                            <h3 class="text-center text-uppercase"><?php echo $event['title']; ?></h3><br>
-                            <h1 class="timeline-date text-center"><?php echo $event['date']; ?></h1><br>
-                            <p class="text-center"><?php echo $event['description']; ?></p>
-                        </div>
-                        <div class="row justify-content-center m-auto">
-                            <div class=" col-4 p-2">
-                                <a href="#" class="btn btn-primary font-weight-bold ">Click here to register</a>
+                <div class=" col-sm-12 col-md-8 col-lg-8 m-auto">
+                    <div class="card-body shadow timeline-entry">
+                        <div class="timeline-content m-auto p-4">
+                            <h1 class="timeline-date text-center m-auto"style="font-size: 4rem;"><?php echo $event['date']; ?></h1><br>
+                            <h3 class="text-center text-uppercase m-auto"><?php echo $event['title']; ?></h3><br>
+                            <p class="text-center m-auto"><?php echo $event['description']; ?></p>
+                            <img src="<?php //echo $event['img']; ?>" alt="<?php //echo $event['img_desc']; ?>">
+                            <div class="row justify-content-center m-auto">
+                                <div class=" col-2">
+                                    <a href="#" class="btn btn-primary btn-lg font-weight-bold ">REGISTER</a>
+                                </div>
                             </div>
                         </div>
                     </div>

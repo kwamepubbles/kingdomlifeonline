@@ -4,8 +4,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
-  padding-right: 1rem!important;
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem !important;
   font-size: 1.1rem;
   text-transform: capitalize;
 }
@@ -60,8 +60,12 @@ div a {
   text-decoration: none;
 }
 
- /* CSS for the timeline */
- #timeline {
+.timeline-entry{
+  background-color: #b376b0;
+}
+
+/* CSS for the timeline 
+#timeline {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -79,7 +83,7 @@ div a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: #ffff;
+  background: rgb(148, 12, 245);
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
@@ -92,7 +96,7 @@ div a {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
+*/
 /*
 --------------------------------------------
 events
