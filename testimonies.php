@@ -40,7 +40,7 @@
     </style>
     <div class="container pt-4">
         <div class="row justify-content-center ">
-            <div class=" col-sm-12 col-md-8 col-lg-8 p-0 m-auto">
+            <div class=" col-sm-12 col-md-6 col-lg-6 p-0 m-auto">
                 <h2>Testimonies</h2>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->

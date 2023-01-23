@@ -19,6 +19,13 @@ nav a img {
   height: 50px;
 }
 
+nav ul,
+nav p,
+.nav-item a,
+nav button span {
+  text-align: center;
+  color: #fff;
+}
 
 label {
   color: rgb(255, 255, 255);
@@ -39,11 +46,6 @@ form {
 #darker img {
   margin-right: 15px;
   position: static;
-}
-
-.footer-bg {
-  width: 100vw;
-  height: 100px;
 }
 
 footer div ul li a {

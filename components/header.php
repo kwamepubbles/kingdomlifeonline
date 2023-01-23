@@ -26,30 +26,30 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <div class="justify-content-center m-auto">
-          <ul class="navbar-nav list-unstyled m-auto">
+          <ul class="navbar-nav list-unstyled">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="index.php"><i class="bi bi-house mr-2"></i>Home</a>
+              <a class="nav-link text-white" aria-current="page" href="index.php"><i class="bi bi-house me-1"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="podcast.php"><i class="bi bi-headphones m-auto"></i>Podcast</a>
+              <a class="nav-link text-white" href="podcast.php"><i class="bi bi-headphones me-1"></i>Podcast</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="gallery.php"><i class="fas fa-camera m-auto"></i>Gallery</a>
+              <a class="nav-link text-white" href="gallery.php"><i class="fas fa-camera me-1"></i>Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="library.php"><i class="bi bi-book m-auto"></i>Library</a>
+              <a class="nav-link text-white" href="library.php"><i class="bi bi-book me-1"></i>Library</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="blog.php"><i class="fa-solid fa-blog m-auto"></i></i>Blog</a>
+              <a class="nav-link text-white" href="blog.php"><i class="fa-solid fa-blog me-1"></i></i>Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="pray.php"><i class="fa fa-praying-hands m-auto"></i>Pray</a>
+              <a class="nav-link text-white" href="pray.php"><i class="fa fa-praying-hands me-1"></i>Pray</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="support.php"><i class="fas fa-seedling m-auto"></i>Seeds & Offering</a>
+              <a class="nav-link text-white" href="support.php"><i class="fas fa-seedling me-1"></i>Seeds</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-white" href="contact.php"><i class="fas fa-fax m-auto"></i>Contact</a>
+              <a class="nav-link text-white" href="contact.php"><i class="fas fa-fax me-1"></i>Contact</a>
             </li>
           </ul>
         </div>

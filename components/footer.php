@@ -1,5 +1,5 @@
 <!-- Footer -->
-<section class="footer-bg">
+<section>
   <style>
     h2 {
       color: #333;
