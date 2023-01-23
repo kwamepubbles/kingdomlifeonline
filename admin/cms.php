@@ -1,5 +1,5 @@
 <?php
-require_once('../scripts/db.config.php');
+include('../scripts/db.config.php');
 ?>
 <?php session_start() ?>
 <!DOCTYPE html>
@@ -18,18 +18,17 @@ require_once('../scripts/db.config.php');
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e786ff1a22.js" crossorigin="anonymous"></script>
-    <script src="https://widget.northeurope.cloudapp.azure.com:9443/v0.1.0/mobile-money-widget-mtn.js"></script>
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg shadow mx-background-top-linear fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" rel="nofollow" href="index.php"><img src="../img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
-            <p>KINGDOM LIFE</p>
-        </div>
-    </nav>
-</header>
 
 <body>
+    <header>
+        <nav class=" sticky-top navbar navbar-expand-md navbar-expand-lg" style="background-color: #6f07b4;">
+            <div class="container">
+                <a class="navbar-brand" rel="nofollow" href="index.php"><img src="../img/klm-HD.png" width="30" height="24" class="d-inline-block align-text-center rounded-circle"></a>
+                <p>KINGDOM LIFE</p>
+            </div>
+        </nav>
+    </header>
     <main>
         <?php
         try {
@@ -70,27 +69,60 @@ require_once('../scripts/db.config.php');
             exit("Error: " . $e->getMessage());
         }
         ?>
-        <section class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-lg bg-light border shadow p-3 m-3">
-                    <h2 class="text-center text-light">Upload Gallery Image </h2><br>
-                    <div class="form-group ">
+        <section>
+            <div class="container mt-4 pt-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6 bg-light border shadow m-auto pb-4">
+                        <h2 class="text-center">Upload slider Images</h2><br>
+                        <div class="form-group p-3">
+                            <h6 class="text-light text-center"><?= $msg; ?></h6>
+                        </div>
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="col">
+                                <div class="form-group p-2">
+                                    <input type="file" name="image" class="form-control p-1" required><br>
+                                </div>
+                                <div class="form-group p-2">
+                                    <input type="text" name="title" placeholder=" Title" class="form-control p-1" required><br>
+                                </div>
+                                <div class="form-group p-2">
+                                    <input type="text" name="description" placeholder=" Discription" class="form-control p-1" required><br>
+                                </div>
+                                <div class="form-group row justify-content-center">
+                                    <div class="col-2">
+                                        <button type="submit" class="btn btn-outline-success" name="upload">Upload</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 bg-light border shadow m-auto mt-4 p-4">
+                    <h2 class="text-center">PUBLISH ARTICLE </h2><br>
+                    <div class="form-group p-3">
                         <h6 class="text-light text-center"><?= $msg; ?></h6>
                     </div>
                     <form action="" method="post" enctype="multipart/form-data">
-                        <div class="col-4">
-                            <div class="form-group p-3 ">
-                                <input type="file" name="image" class="form-control p-1" required><br>
+                        <div class="col">
+                            <div class="form-group p-2">
+                                <input type="date" name="date" placeholder="Select date" class="form-control p-2" required><br>
                             </div>
-                            <div class="form-group p-3 ">
-                                <input type="text" name="title" placeholder=" Title" class="form-control p-1" required><br>
+                            <div class="form-group p-2">
+                                <input type="file" name="image" class="form-control p-2" required><br>
                             </div>
-                            <div class="form-group p-3 ">
-                                <input type="text" name="description" placeholder=" Discription" class="form-control p-1" required><br>
+                            <div class="form-group p-2">
+                                <input type="text" name="title" placeholder=" Title" class="form-control p-2" required><br>
+                            </div>
+                            <div class="form-group p-2">
+                                <textarea class="form-control p-4" placeholder="Write article here ..."></textarea>
+                            </div>
+                            <div class="form-group p-2">
+                                <input type="text" name="fname" placeholder=" Name of author" class="form-control p-2" required><br>
                             </div>
                             <div class="form-group row justify-content-center">
                                 <div class="col-2">
-                                    <button type="submit" class="btn btn-outline-success" name="upload">Upload</button>
+                                    <button type="submit" class="btn btn-outline-success">Publish</button>
                                 </div>
                             </div>
                         </div>

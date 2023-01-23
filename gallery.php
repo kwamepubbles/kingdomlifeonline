@@ -13,7 +13,7 @@ include('scripts/db.config.php');
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color:  #301934 !important;
+            background-color: #301934 !important;
             font-family: "Asap", sans-serif;
             color: #989898;
             margin: 10px;
@@ -111,10 +111,11 @@ include('scripts/db.config.php');
     <!-- Page Content -->
     <div class="container page-top">
 
-
+        <div class="row justify-content-center">
+            <p class="text-white text-center h2 p-2 m-4">Go back to <a class="btn btn-outline-success btn-lg" type="button" href="index.php">Homepage</a></p>
+        </div>
 
         <div class="row">
-
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
@@ -164,18 +165,13 @@ include('scripts/db.config.php');
                 </a>
             </div>
 
-
-
-
         </div>
 
-<div class="row justify-content-center">
-    <p class="text-white text-center h2 p-2 m-4">Go back to <a class="btn btn-outline-success btn-lg" type="button" href="index.php">Homepage</a></p>
-</div>
+        <div class="row justify-content-center">
+            <p class="text-white text-center h2 p-2 m-4">Go back to <a class="btn btn-outline-success btn-lg" type="button" href="index.php">Homepage</a></p>
+        </div>
 
     </div>
-
-
 
 </body>
 

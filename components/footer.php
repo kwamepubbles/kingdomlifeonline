@@ -33,9 +33,10 @@
           <div><i class="fas fa-church"></i></div>
           <h6 class="text-uppercase">Ministrations</h6>
           <ul class="list-unstyled m-auto">
-            <li><a href="#" class="text-white">School of the Spirit</a></li>
-            <li><a href="#" class="text-white">Solution Night</a></li>
-            <li><a href="#" class="text-white">Commanding the month</a></li>
+            <li><a href="index.php" class="text-white">School of the Spirit</a></li>
+            <li><a href="index.php" class="text-white">Solution Night</a></li>
+            <li><a href="index.php" class="text-white">Mountain Experience</a></li>
+            <li><a href="index.php" class="text-white">Commanding the month</a></li>
           </ul>
         </div>
         <!--Grid column-->
@@ -44,9 +45,9 @@
           <div><i class="fas fa-music"></i></div>
           <h6 class="text-uppercase">Media </h6>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Gallery</a></li>
-            <li><a href="#" class="text-white">Podcasts</a></li>
-            <li><a href="#" class="text-white">Library</a></li>
+            <li><a href="gallery.php" class="text-white">Gallery</a></li>
+            <li><a href="podcast.php" class="text-white">Podcasts</a></li>
+            <li><a href="library.php" class="text-white">Library</a></li>
           </ul>
         </div>
         <!--Grid column-->
@@ -55,9 +56,9 @@
           <div><i class="fas fa-headset"></i></div>
           <h6 class="text-uppercase text-left">Contact </h6>
           <ul class="list-unstyled">
-            <li><a><i class="fas fa-home"></i> New York, NY 10012, US</a></li>
-            <li><a><i class="fas fa-envelope"></i> info@example.com</a></li>
-            <li><a><i class="fas fa-phone"></i> + 01 234 567 88</a></li>
+            <li class="text-break"><a><i class="fas fa-home"></i> University of Ghana, Legon. Accra-GH</a></li>
+            <li><a><i class="fas fa-envelope"></i> kingdomlife2233@gmail.com</a></li>
+            <li><a><i class="fas fa-phone"></i> + 233-234-567-88</a></li>
           </ul>
         </div>
         <!--Grid column-->

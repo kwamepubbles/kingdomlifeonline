@@ -10,22 +10,22 @@ include('components/carousel.php');
 
 <section>
     <div class="container-fluid mt-4 overflow-hidden text-center">
-        <h2 class="font-weight-bold m-auto "> Our Programs</h2>
+        <h2 class="font-weight-bold m-auto mb-4 "> Our Programs</h2>
         <div class="row gx-5 pt-4">
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
+                <h5 class="text-center">SCHOOL OF THE SPIRIT</h3>
                 <img src="img/sots.jpg" class="d-block w-50 h-auto m-auto p-3" alt="...">
-                <h3 class="text-center">SCHOOL OF THE SPIRIT</h3>
-                <p class="p-4 h5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
+                <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
+                <h5 class="text-center">SOLUTION NIGHT</h3>
                 <img src="img/sn.jpg" class="img-fluid d-block w-50 h-auto m-auto p-3" alt="...">
-                <h3 class="text-center">SOLUTION NIGHT</h3>
-                <p class="p-4 h5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
+                <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
+                <h5 class="text-center">MOUNTAIN EXPERIENCE</h3>
                 <img src="img/sn.jpg" class="img-fluid d-block w-50 h-auto m-auto p-3" alt="...">
-                <h3 class="text-center">MOUNTAIN EXPERIENCE</h3>
-                <p class="p-4 h5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
+                <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dignissimos voluptate aperiam sit cupiditate similique ut sapiente repellendus alias dolore, nobis iusto, sed impedit odit nisi in nostrum ipsa sint!</p>
             </div>
         </div>
     </div>

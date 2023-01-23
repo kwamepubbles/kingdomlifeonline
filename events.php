@@ -40,16 +40,16 @@
                 <div class="col-sm-12 col-md-4 col-lg-4 p-0">
                     <p class="text-center" style="font-size: 14rem; color:blueviolet;"><i class="fa-solid fa-calendar-days"></i></p>
                 </div>
-                <div class=" col-sm-12 col-md-8 col-lg-8 m-auto">
-                    <div class="card-body shadow timeline-entry">
+                <div class=" col-sm-12 col-md-6 col-lg-6 m-auto">
+                    <div class="card-body timeline-entry">
                         <div class="timeline-content m-auto p-4">
-                            <h1 class="timeline-date text-center m-auto"style="font-size: 4rem;"><?php echo $event['date']; ?></h1><br>
+                            <h1 class="timeline-date text-center m-auto"style="font-size: 3rem;"><?php echo $event['date']; ?></h1><br>
                             <h3 class="text-center text-uppercase m-auto"><?php echo $event['title']; ?></h3><br>
                             <p class="text-center m-auto"><?php echo $event['description']; ?></p>
                             <img src="<?php //echo $event['img']; ?>" alt="<?php //echo $event['img_desc']; ?>">
-                            <div class="row justify-content-center m-auto">
-                                <div class=" col-2">
-                                    <a href="#" class="btn btn-primary btn-lg font-weight-bold ">REGISTER</a>
+                            <div class="row justify-content-center">
+                                <div class=" col-sm-4 col-md-2 col-lg-2 m-auto">
+                                    <a href="#" class="btn btn-primary font-weight-bold ">REGISTER</a>
                                 </div>
                             </div>
                         </div>
@@ -58,4 +58,7 @@
             <?php endforeach; ?>
         </div>
     </div>
+</section>
+<section>
+    <?php include('timeline.php');?>
 </section>
