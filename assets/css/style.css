@@ -35,22 +35,6 @@ h2::after {
   text-transform: capitalize;
 }
 
-div a {
-  text-decoration-style: none;
-}
-
-nav a img {
-  width: 50px;
-  height: 50px;
-}
-
-nav ul,
-nav p,
-.nav-item a,
-nav button span {
-  text-align: center;
-  color: #fff;
-}
 
 label {
   color: rgb(255, 255, 255);

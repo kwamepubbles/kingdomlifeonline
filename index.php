@@ -9,35 +9,34 @@ include('components/carousel.php');
 ?>
 
 <section>
-    <div class="container text-start pt-4">
+    <div class="container pt-4">
         <div class="row g-1">
-            <div class="col-6">
-                <div class="p-2 card border bg-light">
+            <div class="col-md-6 mb-md-0 p-md-4">
 
-                    <div class="card-body rounded">
-                        <img class="img-fluid w-50" src="img/klm-HD.png" alt="...">
-                        <p class="text-break">
-                        <h6>Welcome to Kingdom Life!</h6> Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
+                <div class="card-body border rounded p-2 bg-light">
+                    <img class="img-fluid w-50" src="img/klm-HD.png" alt="...">
+                    <p class="text-break">
+                    <h6>Welcome to Kingdom Life!</h6> Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
 
-                        On our website, you'll find a variety of resources including daily devotions and sermons. We also have a section dedicated to prayer and to help you connect with God.
+                    On our website, you'll find a variety of resources including daily devotions and sermons. We also have a section dedicated to prayer and to help you connect with God.
 
-                        Our blog features articles written by Christian leaders and members of our community, discussing a wide range of topics such as marriage, parenting, and current events from a biblical perspective.
+                    Our blog features articles written by Christian leaders and members of our community, discussing a wide range of topics such as marriage, parenting, and current events from a biblical perspective.
 
-                        In addition to our online resources, we also host regular events such as Bible studies, worship nights, and retreats. These events provide an opportunity for members of our community to come together and deepen their relationship with God.
+                    In addition to our online resources, we also host regular events such as Bible studies, worship nights, and retreats. These events provide an opportunity for members of our community to come together and deepen their relationship with God.
 
-                        We believe that faith is a journey and we're here to support you every step of the way. We invite you to explore our website and join our community. Together, we can grow in our understanding and love for God.
+                    We believe that faith is a journey and we're here to support you every step of the way. We invite you to explore our website and join our community. Together, we can grow in our understanding and love for God.
 
-                        May God bless you and guide you on your journey. <br>
+                    May God bless you and guide you on your journey. <br>
 
-                        In Christ, <br>
-                        [Kingdomlife Team]</p>
-                    </div>
+                    In Christ, <br>
+                    [Kingdomlife Team]</p>
+
                 </div>
             </div>
-            <div class="col-6">
-                <div class="p-2 border bg-success">
-                    <h2 class="font-weight-bold text-center"> Daily Nuggets</h2>
-                    <div class="card-body rounded">
+            <div class="col-md-6 mb-md-0 p-md-4">
+                <div class="p-2 bg-success rounded">
+                    <h2 class=" text-center"> Daily Nuggets</h2>
+                    <div class="card-body border">
                         <h4 class="text-center text-bg-dark">Post title</h4>
                         <p class="text-break">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in semper tellus. Donec a elit vel massa elementum malesuada. Mauris lacus lectus, aliquam quis ultricies ac, pretium in leo. Donec dictum, massa id luctus facilisis, diam est malesuada massa, ac scelerisque arcu tellus at est.
@@ -47,6 +46,16 @@ include('components/carousel.php');
                             Curabitur a condimentum purus, eu viverra nisi. Morbi pellentesque scelerisque tellus, et laoreet nisl mollis in.
                         </p>
                     </div>
+                    <div class="row g-1 bg-light position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4">
+                            <img src="img/calm-spiritual.jpg" class="w-100" alt="...">
+                        </div>
+                        <div class="col-md-6 p-0 ps-md-0">
+                            <h5 class="mt-0">Columns with stretched link</h5>
+                            <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                            <a href="#" class="stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,7 +63,7 @@ include('components/carousel.php');
 </section>
 <section>
     <div class="container mt-4 overflow-hidden text-center">
-        <h2 class="font-weight-bold text-center my-4 ">Sessions & Events</h2>
+        <h2 class="text-center my-4 ">Sessions & Events</h2>
         <div class="row gx-5 pt-4">
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
                 <img src="img/sots.jpg" class="d-block w-75 h-auto m-auto p-2" alt="...">

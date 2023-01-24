@@ -2,7 +2,7 @@
 <section>
     <div class="container">
         <h2 class="my-5">Testimonies</h2>
-        <div class="row justify-content-center">
+        <div class="row">
             <div class=" col-sm-12 col-md-8 col-lg-8 p-0 m-auto">
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
@@ -32,7 +32,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                    <div class="row justify-content-center pt-4">
+                    <div class="row">
                         <button class=" col-sm-6 col-md-6 col-lg-6 m-auto btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                             Share Testimony
                         </button>
