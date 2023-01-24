@@ -1,47 +1,9 @@
 <!-- testimony Body -->
 <section>
-    <style>
-        .carousel .carousel-item {
-            color: #999;
-            font-size: 14px;
-            text-align: center;
-            overflow: hidden;
-            min-height: 290px;
-        }
-
-        .carousel .carousel-item .img-box {
-            width: 135px;
-            height: 135px;
-            margin: 0 auto;
-            padding: 5px;
-            border: 1px solid #ddd;
-            border-radius: 50%;
-        }
-
-        .carousel .img-box img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 50%;
-        }
-
-        .carousel .testimonial {
-            padding: 30px 0 30px;
-        }
-
-        .carousel .overview {
-            font-style: italic;
-        }
-
-        .carousel .overview b {
-            text-transform: uppercase;
-            color: #7AA641;
-        }
-    </style>
-    <div class="container pt-4">
-        <div class="row justify-content-center ">
+    <div class="container">
+        <h2 class="my-5">Testimonies</h2>
+        <div class="row justify-content-center">
             <div class=" col-sm-12 col-md-8 col-lg-8 p-0 m-auto">
-                <h2>Testimonies</h2>
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">

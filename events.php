@@ -32,7 +32,7 @@
     <!-- HTML for the timeline container -->
     <div class="container mt-4" id="timeline">
         <div class="row">
-            <h2 class="font-weight-bold text-center">Upcoming Events</h2>
+            <h2 class="text-center my-4">Upcoming Events</h2>
         </div>
         <div class="row justify-content-center">
             <!-- loop through events from the database and create a timeline entry for each -->

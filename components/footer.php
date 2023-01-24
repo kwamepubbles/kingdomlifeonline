@@ -1,28 +1,17 @@
 <!-- Footer -->
 <section>
-  <style>
-    h2 {
-      color: #333;
-      text-align: center;
-      text-transform: uppercase;
-      font-family: "Roboto", sans-serif;
-      font-weight: bold;
-      position: relative;
-      margin: 30px 0 60px;
-    }
-
-    h2::after {
-      content: "";
-      width: 100px;
-      position: absolute;
-      margin: 0 auto;
-      height: 3px;
-      background: #9d16aa;
-      left: 0;
-      right: 0;
-      bottom: -10px;
-    }
-  </style>
+  <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb justify-content-start ms-4 me-4">
+      <li class="breadcrumb-item"><a href="#"><i class="bi bi-house me-1"></i>Home</a></li>
+      <li class="breadcrumb-item"><a href="#"><i class="bi bi-headphones me-1"></i>Podcast</a></li>
+      <li class="breadcrumb-item"><a href="#"><i class="fas fa-camera me-1"></i>Gallery</a></li>
+      <li class="breadcrumb-item"><a href="#"><i class="bi bi-book me-1"></i>Library</a></li>
+      <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-blog me-1"></i></i>Blog</a></li>
+      <li class="breadcrumb-item"><a href="#"><i class="fa fa-praying-hands me-1"></i>Pray</a></li>
+      <li class="breadcrumb-item"><a href="#"><i class="fas fa-seedling me-1"></i>Seeds</a></li>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#"><i class="fas fa-fax me-1"></i>Contact</a></li>
+    </ol>
+  </nav>
   <footer>
     <!--Grid container-->
     <div class="container-fluid text-white" style="background-color: #8f6304;">
@@ -36,7 +25,6 @@
             <li><a href="index.php" class="text-white">School of the Spirit</a></li>
             <li><a href="index.php" class="text-white">Solution Night</a></li>
             <li><a href="index.php" class="text-white">Mountain Experience</a></li>
-            <li><a href="index.php" class="text-white">Commanding the month</a></li>
           </ul>
         </div>
         <!--Grid column-->
@@ -54,7 +42,7 @@
         <!--Grid column-->
         <div class="col-sm-12 col-md-4 col-lg-4 text-center m-auto">
           <div><i class="fas fa-headset"></i></div>
-          <h6 class="text-uppercase text-left">Contact </h6>
+          <h6 class="text-uppercase">Contact </h6>
           <ul class="list-unstyled">
             <li class="text-break"><a><i class="fas fa-home"></i> University of Ghana, Legon. Accra-GH</a></li>
             <li><a><i class="fas fa-envelope"></i> kingdomlife2233@gmail.com</a></li>
