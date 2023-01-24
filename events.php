@@ -60,5 +60,5 @@
     </div>
 </section>
 <section>
-    <?php include('timeline.php');?>
+    <?php // include('timeline.php');?>
 </section>
