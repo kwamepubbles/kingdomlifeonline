@@ -4,6 +4,20 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 }
+.welcome {
+  background-image: url('../../img/kl-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sessions {
+  background-image: url('../../img/mount.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 h2 {
   color: #333;
@@ -50,6 +64,13 @@ nav button span {
   text-align: center;
   color: #fff;
 }
+.social {
+  background-color: #380958;
+}
+
+.copyright {
+  background-color: #37343b;
+}
 
 label {
   color: rgb(255, 255, 255);
@@ -85,7 +106,7 @@ div a {
 }
 
 .timeline-entry{
-  background-color: #b376b0;
+  background-color: #720f6d6c;
 }
 
 /* CSS for the timeline 
