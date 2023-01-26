@@ -1,5 +1,6 @@
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<div class="container">
+
+<div class="container fluid">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -16,7 +17,7 @@
                                             <a href="#0" data-date="28/02/2017" style="left: 300px" class="older-event">28 Feb</a>
                                         </li>
                                         <li>
-                                            <a href="#0" data-date="20/04/2017" style="left: 480px" class="selected">20 Mar</a>
+                                            <a href="#0" data-date="20/04/2017" style="left: 480px" class="older-event ">20 Mar</a>
                                         </li>
                                         <li>
                                             <a href="#0" data-date="20/05/2017" style="left: 600px">20 May</a>
@@ -40,7 +41,7 @@
                                             <a href="#0" data-date="19/01/2018" style="left: 1500px">29 Jan</a>
                                         </li>
                                         <li>
-                                            <a href="#0" data-date="03/03/2018" style="left: 1680px">3 Mar</a>
+                                            <a href="#0" data-date="29/01/2023" style="left: 1680px" class="selected">3 Mar</a>
                                         </li>
                                     </ol>
                                     <span class="filling-line" aria-hidden="true" style="transform: scaleX(0.281506)"></span>
@@ -267,7 +268,7 @@
                                         infancy.
                                     </p>
                                 </li>
-                                <li data-date="03/03/2018">
+                                <li data-date="29/01/2023">
                                     <h4>Event title here</h4>
                                     <em>March 3rd, 2018</em>
                                     <p>
@@ -290,10 +291,10 @@
     </div>
 </div>
 <style type="text/css">
-    /* body {
-            margin-top: 20px;
-            background: #eee;
-        }*/
+    /*body {
+        margin-top: 20px;
+        background: #eee;
+    }*/
 
     .cd-horizontal-timeline ol,
     .cd-horizontal-timeline ul {

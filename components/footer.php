@@ -43,9 +43,9 @@
         <div><i class="fas fa-headset"></i></div>
         <h6 class="text-uppercase">Contact </h6>
         <ul class="list-unstyled">
-          <li class="text-break"><a><i class="fas fa-home"></i> University of Ghana, Legon. Accra-GH</a></li>
+          <li class="text-break"><a><i class="fa fa-map-marker"></i> University of Ghana, Legon. Accra-GH</a></li>
           <li><a><i class="fas fa-envelope"></i> kingdomlife2233@gmail.com</a></li>
-          <li><a><i class="fas fa-phone"></i> + 233-234-567-88</a></li>
+          <li><a><i class="fas fa-phone"></i> (+233) 234 567 88</a></li>
         </ul>
       </div>
       <!--Grid column-->
@@ -87,4 +87,5 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
 </html>

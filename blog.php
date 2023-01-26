@@ -7,7 +7,7 @@ include('scripts/db.config.php');
 <section>
     <div class="container-fluid">
         <div class=" row justify-content-center">
-            <div class="col-12 text-bg-light pt-4">
+            <div class="col-12 text-bg-light py-4">
                 <h2>Blog</h2>
             </div>
 

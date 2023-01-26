@@ -59,6 +59,3 @@
         </div>
     </div>
 </section>
-<section>
-    <?php include('timeline.php');?>
-</section>
