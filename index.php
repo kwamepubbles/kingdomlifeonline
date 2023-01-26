@@ -57,7 +57,7 @@ include('components/carousel.php');
 
             <div class="col-sm-12 col-md-4 mb-md-0 p-md-4 m-auto">
                 <div class="p-0">
-                    <img src="img/papa.png" class="img-fluid w-100" alt="">
+                    <img src="img/papa.png" class="img-fluid w-75" alt="">
                 </div>
             </div>
         </div>
@@ -67,15 +67,15 @@ include('components/carousel.php');
 <section class="sessions">
     <div class="container-fluid">
         <h2 class="text-center">Our Programs</h2>
-        <div class="row gx-5">
+        <div class="row gx-5 p-3">
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
-                <img src="img/sots.jpg" class="d-block w-75 h-auto m-auto p-2" alt="...">
+                <img src="img/sots.jpg" class="d-block w-100 h-auto m-auto p-2" alt="...">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
-                <img src="img/sn2.jpg" class="img-fluid d-block w-75 h-auto m-auto p-2" alt="...">
+                <img src="img/sn2.jpg" class=" d-block w-100 h-auto m-auto p-2" alt="...">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
-                <img src="img/me23.jpg" class="img-fluid d-block w-75 h-auto m-auto p-2" alt="...">
+                <img src="img/sn.jpg" class=" d-block w-100 h-auto m-auto p-2" alt="...">
             </div>
         </div>
     </div>

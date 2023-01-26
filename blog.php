@@ -20,7 +20,7 @@ include('scripts/db.config.php');
                 </div>
 
                 <div class="col-sm-12 col-md-6 col-lg-6 vstack">
-                    
+
                     <div data-bs-spy="scroll" data-bs-target="#posts" data-bs-offset="0" data-bs-smooth-scroll="true" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
                         <?php
                         try {
@@ -32,7 +32,7 @@ include('scripts/db.config.php');
                         }
                         ?>
                         <?php foreach ($posts as $post) : ?>
-                            
+            
                             <div class="posts border p-4 m-3 shadow" id="posts">
                                 <h4 class="text-center text-bg-dark p-2"> <?php echo $post['title']; ?></h4>
                                 <p class="text-break"> <?php echo $post['body']; ?></p>

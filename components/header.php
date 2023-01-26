@@ -28,32 +28,31 @@
         <div class="justify-content-center m-auto">
           <ul class="navbar-nav list-unstyled">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="index.php"><i class="bi bi-house me-1"></i>Home</a>
+              <a class="nav-link" aria-current="page" href="index.php"><i class="bi bi-house me-1"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="podcast.php"><i class="bi bi-headphones me-1"></i>Podcast</a>
+              <a class="nav-link" href="podcast.php"><i class="bi bi-headphones me-1"></i>Podcast</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="gallery.php"><i class="fas fa-camera me-1"></i>Gallery</a>
+              <a class="nav-link" href="gallery.php"><i class="fas fa-camera me-1"></i>Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="library.php"><i class="bi bi-book me-1"></i>Library</a>
+              <a class="nav-link" href="library.php"><i class="bi bi-book me-1"></i>Library</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="blog.php"><i class="fa-solid fa-blog me-1"></i></i>Blog</a>
+              <a class="nav-link" href="blog.php"><i class="fa-solid fa-blog me-1"></i></i>Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="pray.php"><i class="fa fa-praying-hands me-1"></i>Pray</a>
+              <a class="nav-link" href="pray.php"><i class="fa fa-praying-hands me-1"></i>Pray</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="support.php"><i class="fas fa-seedling me-1"></i>Seeds</a>
+              <a class="nav-link" href="support.php"><i class="fa fa-seedling me-1"></i>Seeds</a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link text-white" href="contact.php"><i class="fas fa-fax me-1"></i>Contact</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php"><i class="fa-solid fa-address-card me-1"></i></i>About</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-  

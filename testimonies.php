@@ -14,7 +14,7 @@
         <h2 class="my-5">Testimonies</h2>
         <div class="row">
             <div class=" col-sm-12 col-md-8 col-lg-8 p-0 m-auto">
-                <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="mytestimony" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <?php foreach ($posts as $post) : ?>
@@ -25,11 +25,11 @@
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mytestimony" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#mytestimony" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
