@@ -1,11 +1,17 @@
 <!-- slider -->
 <div class="container-fluid p-0 m-0">
   <?php
-  $stmt = $plug->prepare("SELECT * FROM carousel");
-  $stmt->execute();
-  // set the resulting array to associative
-  $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-  $carousel_images = $stmt->fetchAll();
+  try {
+    $stmt = $plug->prepare("SELECT * FROM carousel");
+    $stmt->execute();
+    // set the resulting array to associative
+    $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    $carousel_images = $stmt->fetchAll();
+
+  } 
+  catch (PDOException $e) {
+    exit("Error: " . $e->getMessage());
+  }
   ?>
   <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">

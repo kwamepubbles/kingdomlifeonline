@@ -9,10 +9,10 @@ include('components/carousel.php');
 ?>
 
 <section class="welcome">
-    <div class="container-fluid pt-4">
+    <div class="container-fluid">
         <div class="row mb-0 p-4 m-auto">
             <img class="d-block w-25" src="img/klm-HDlight.png" alt="...">
-            <div class="p-4 text-bg-dark">
+            <div class="p-4 text-white">
                 <h4>Welcome to Kingdom Life!</h4>
                 <p class="text-break">
                     Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
@@ -28,12 +28,18 @@ include('components/carousel.php');
                     May God bless you and guide you on your journey. <br>
 
                     In Christ, <br>
-                    [Kingdomlife Team]</p>
+                    [Kingdomlife Team]
+                </p>
             </div>
         </div>
 
+    </div>
+</section>
+
+<section class="nuggets">
+    <div class="container-fluid pt-4">
         <div class="row g-2 m-4">
-            <div class="col-md-6 mb-md-0 p-md-4 m-auto">
+            <div class="col-sm-12 col-md-8 mb-md-0 p-md-4 m-auto">
                 <div class="p-2" style="background-color: rgba(42, 2, 48, 0.747);">
                     <h2 class=" text-center my-4 text-white"> Daily Nuggets</h2>
                     <div class="card-body p-4">
@@ -49,10 +55,9 @@ include('components/carousel.php');
                 </div>
             </div>
 
-            <div class="col-md-6 mb-md-0 p-md-4 m-auto">
-                <div class="p-0" style="background-color: rgba(42, 2, 48, 0.747);">
-                        <img src="img/papa.png" class="d-block w-75 position-relative bottom-0 end-0 me-0" alt="">
-                    </div>
+            <div class="col-sm-12 col-md-4 mb-md-0 p-md-4 m-auto">
+                <div class="p-0">
+                    <img src="img/papa.png" class="img-fluid w-100" alt="">
                 </div>
             </div>
         </div>
@@ -60,9 +65,9 @@ include('components/carousel.php');
 </section>
 
 <section class="sessions">
-    <div class="container-fluid mt-4 overflow-hidden text-center">
-        <h2 class="text-center my-4 ">Our Programs</h2>
-        <div class="row gx-5 pt-4">
+    <div class="container-fluid">
+        <h2 class="text-center">Our Programs</h2>
+        <div class="row gx-5">
             <div class="col-sm-12 col-md-12 col-lg-4 m-auto">
                 <img src="img/sots.jpg" class="d-block w-75 h-auto m-auto p-2" alt="...">
             </div>
