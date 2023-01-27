@@ -37,7 +37,7 @@ function test_input($data) {
 ?>
 
 <p><span class='error'>* required field</span></p>
-<form method='post' action='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>'>  
+<form method='$_POST' action='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>'>  
     Message: <input type='text' name='message'>
     <span class='error'>*<?php echo $messageErr;?></span>
     <br><br>

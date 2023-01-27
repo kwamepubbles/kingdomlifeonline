@@ -17,6 +17,9 @@
 </head>
 
 <body>
+  <?php
+  include('./scripts/db.config.php');
+  ?>
   <nav class="navbar sticky-top navbar-expand-md navbar-expand-lg " style="background-color: #6f07b4;">
     <div class="container">
       <a class="navbar-brand" href="index.php"><img src="./img/klm-HD-icon.png" class="d-block  rounded-circle"></a>
@@ -40,16 +43,16 @@
               <a class="nav-link" href="library.php"><i class="bi bi-book me-1"></i>Library</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.php"><i class="fa-solid fa-blog me-1"></i></i>Blog</a>
+              <a class="nav-link" href="blog.php"><i class="fa-solid fa-blog me-1"></i>Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pray.php"><i class="fa fa-praying-hands me-1"></i>Pray</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="support.php"><i class="fa fa-seedling me-1"></i>Seeds</a>
+              <a class="nav-link" href="support.php"><i class="fa regular fa-donate me-1"></i>Donate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.php"><i class="fa-solid fa-address-card me-1"></i></i>About</a>
+              <a class="nav-link" href="contact.php"><i class="fa regular fa-suitcase me-1"></i>About Us</a>
             </li>
           </ul>
         </div>

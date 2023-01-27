@@ -1,10 +1,9 @@
 <!-- testimony Body -->
-<section>
-    <?php include ('scripts/db.config.php');?>
+<section class="testify-bg">
     <div class="container-fluid">
         <?php
         try {
-            $stmt = $plug->prepare("SELECT * FROM testimony  ORDER BY id DESC");
+            $stmt = $plug->prepare("SELECT * FROM testimony ORDER BY id DESC");
             $stmt->execute();
             $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             $posts = $stmt->fetchAll();
@@ -14,7 +13,7 @@
         ?>
         <h2 class="my-5">Testimonies</h2>
         <div class="row">
-            <div class=" col-sm-12 col-md-8 col-lg-8 p-0 m-auto">
+            <div class=" col-sm-12 col-md-8 col-lg-8 py-5 m-auto">
                 <div id="mytestimony" class="carousel slide" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
@@ -35,12 +34,12 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="row">
-                    <button class=" col-sm-6 col-md-4 col-lg-4 m-auto btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
-                        Share Testimony
-                    </button>
-                </div>
             </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-4 m-auto text-center">
+            <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+                Share Testimony
+            </button>
         </div>
     </div>
 

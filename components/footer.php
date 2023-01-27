@@ -29,7 +29,7 @@
       <!--Grid column-->
       <!--Grid column-->
       <div class="col-sm-12 col-md-4 col-lg-4 text-center m-auto">
-        <div><i class="fas fa-music"></i></div>
+        <div><i class="fa-solid fa-photo-film-music"></i></div>
         <h6 class="text-uppercase">Media </h6>
         <ul class="list-unstyled">
           <li><a href="gallery.php" class="text-white">Gallery</a></li>
