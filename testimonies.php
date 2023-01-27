@@ -1,5 +1,6 @@
 <!-- testimony Body -->
 <section>
+    <?php include ('scripts/db.config.php');?>
     <div class="container-fluid">
         <?php
         try {
@@ -52,8 +53,6 @@
                 </div>
                 <div class="offcanvas-body">
                     <?php
-                    require_once('scripts/db.config.php');
-
                     try {
                         $msg = "";
                         if (isset($_POST['submit'])) {
@@ -62,17 +61,17 @@
                             $lname = htmlspecialchars($_POST['lname']);
                             $message = htmlspecialchars($_POST['message']);
 
-                            if ($query->rowCount() == 0) {
-                                $query = $plug->prepare("INSERT INTO testimony (img,fname,lname,message) VALUES (:img,:fname,:lname,:message)");
-                                $query->bindParam("img", $image, PDO::PARAM_STR);
-                                $query->bindParam("fname", $fname, PDO::PARAM_STR);
-                                $query->bindParam("lname", $lname, PDO::PARAM_STR);
-                                $query->bindParam("message", $message, PDO::PARAM_STR);
-                                $result = $query->execute();
+                            if ($stmt->rowCount() == 0) {
+                                $stmt = $plug->prepare("INSERT INTO testimony (img,fname,lname,message) VALUES (:img,:fname,:lname,:message)");
+                                $stmt->bindParam("img", $image, PDO::PARAM_STR);
+                                $stmt->bindParam("fname", $fname, PDO::PARAM_STR);
+                                $stmt->bindParam("lname", $lname, PDO::PARAM_STR);
+                                $stmt->bindParam("message", $message, PDO::PARAM_STR);
+                                $result = $stmt->execute();
 
                                 if ($result) {
                                     $msg = '<div class="alert alert-success alert-dismissible fade show" role="alert">Testimony successfully submitted</div>';
-                                }
+                                } 
                             }
                         }
                     } catch (PDOException $e) {
@@ -81,7 +80,7 @@
                     ?>
 
                     <div class="form-group">
-                        <?= $msg; ?>
+                        <?php $msg; ?>
                     </div>
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
                         <div class="form-group">

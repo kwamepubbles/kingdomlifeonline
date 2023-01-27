@@ -71,6 +71,7 @@ nav button span {
   text-align: center;
   color: #fff;
 }
+
 .social {
   background-color: #380958;
 }
@@ -198,7 +199,7 @@ Contact CSS
 */
 
 .contact-area {
-  background: url('../../img/lion.jpg') no-repeat;
+  background: url("../../img/lion.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -368,6 +369,37 @@ Responsiive
 ---------------------------------------------
 */
 @media screen and (max-width: 768px) {
+  .welcome {
+    background-image: url("../../img/hanukkah.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+  }
+
+  .nuggets {
+    background-image: url("../../img/kl-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sessions {
+    background-image: url("../../img/mount.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .social {
+    background-color: #380958;
+  }
+
+  .copyright {
+    background-color: #37343b;
+  }
+
   .timeline::before {
     left: 50px;
   }
