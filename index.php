@@ -7,35 +7,36 @@ include('components/carousel.php');
 
 <section class="welcome">
     <div class="container-fluid">
-        <div class="row mb-0 p-4 m-auto">
-            <img class="d-block w-25" src="img/klm-HDlight.png" alt="...">
-            <div class=" text-white" style="background-color: rgba(0, 0, 0, 0.5);">
-                <p class="text-break p-4 pt-0">
-                    <h4>Welcome to Kingdom Life!</h4>
-                    Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
 
-                    On our website, you'll find a variety of resources including daily devotions and sermons. We also have a section dedicated to prayer and to help you connect with God.
-
-                    Our blog features articles written by Christian leaders and members of our community, discussing a wide range of topics such as marriage, parenting, and current events from a biblical perspective.
-
-                    In addition to our online resources, we also host regular events such as worship nights and retreats.
-
-                    We believe that faith is a journey and we're here to support you every step of the way. We invite you to explore our website and join our community. Together, we can grow in our understanding and love for God.
-
-                    May God bless you and guide you. <br>
-
-                    In Christ, <br>
-                    [Kingdomlife Team]
-                </p>
-            </div>
-        </div>
     </div>
 </section>
 <section class="nuggets">
-    <div class="container-fluid pb-0 pt-4">
-        <div class="row g-2 mb-0 m-4">
-            <div class="col-sm-12 col-md-6 mb-md-0 p-md-4 m-auto">
-                <div class="p-2" style="background-color: rgba(42, 2, 48, 0.747);">
+    <div class="container-fluid">
+        <div class="row m-auto">
+            <img class="d-block w-25" src="img/klm-HDlight.png" alt="...">
+            <div class=" text-white p-4" style="background-color: rgba(0, 0, 0, 0.5);">
+                <p class="text-break">
+                <h4>Welcome to Kingdom Life!</h4>
+                Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
+
+                On our website, you'll find a variety of resources including daily devotions and sermons. We also have a section dedicated to prayer and to help you connect with God.
+
+                Our blog features articles written by Christian leaders and members of our community, discussing a wide range of topics such as marriage, parenting, and current events from a biblical perspective.
+
+                In addition to our online resources, we also host regular events such as worship nights and retreats.
+
+                We believe that faith is a journey and we're here to support you every step of the way. We invite you to explore our website and join our community. Together, we can grow in our understanding and love for God.
+
+                May God bless you and guide you. <br>
+
+                In Christ, <br>
+                [Kingdomlife Team]
+                </p>
+            </div>
+        </div>
+        <div class="row g-2 mb-0 m-auto">
+            <div class="col-sm-12 col-lg-8 mb-md-0 p-md-4 ">
+                <div class="p-4" style="background-color: rgba(42, 2, 48, 0.747);">
                     <h2 class=" text-center my-4 text-white"> Daily Nuggets</h2>
                     <div class="card-body p-4">
                         <h4 class="text-center text-bg-dark p-2">Post Title</h4>
@@ -49,8 +50,8 @@ include('components/carousel.php');
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 mb-md-0 p-md-4 m-auto">
-                <div class="p-4 pb-0">
+            <div class="col-sm-12 col-lg-4 mb-md-0 p-md-2 m-auto">
+                <div class="papa p-4 pb-0">
                     <img src="img/papa.png" class="img-fluid" alt="">
                 </div>
             </div>

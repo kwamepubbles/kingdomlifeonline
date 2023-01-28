@@ -10,8 +10,8 @@ body {
 }
 
 .welcome {
-  background-image: url("../../img/bg.jpg");
-  background-attachment: fixed;
+  background-image: url("../../img/welcome-bg.jpg");
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: absolute;
   background-size: cover;
@@ -385,15 +385,23 @@ Contact CSS
 Responsiive
 ---------------------------------------------
 */
-@media screen and (max-width: 768px) {
+
+@media only screen and (max-width: 768px) {
   .welcome {
-    background-image: url("../../img/bg.jpg");
-    background-attachment: fixed;
+    background-image: url("../../img/welcome-bg.jpg");
+    background-attachment: inherit;
     background-repeat: no-repeat;
     background-position: absolute;
     background-size: cover;
   }
-
+  @media only screen and (min-width: 768px) {
+    .papa {
+      display: block;
+      width: 50vw;
+      height: auto;
+      margin: auto;
+    }
+  }
   .nuggets {
     background-image: url("../../img/kl-bg.jpg");
     background-size: cover;
@@ -407,6 +415,13 @@ Responsiive
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .papa {
+    display: block;
+    width: 50vw;
+    height: auto;
+    margin: auto;
   }
 
   .social {

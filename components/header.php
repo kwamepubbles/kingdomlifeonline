@@ -13,6 +13,7 @@
   <link href="assets/fontawesome6/css/solid.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
   <!------ Include the above in your HEAD tag ---------->
 </head>
 
