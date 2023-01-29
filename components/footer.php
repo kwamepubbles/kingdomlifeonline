@@ -13,9 +13,9 @@
 </nav>-->
 <footer>
   <!--Grid container-->
-  <div class="container-fluid text-white pt-2" style="background-color: #8f6304;">
+  <div class="container-fluid text-white" style="background-color: #8f6304;">
     <!--Grid row-->
-    <div class="row justify-content-center m-auto">
+    <div class="row justify-content-center mx-5">
       <!--Grid column-->
       <div class="col-sm-12 col-md-4 col-lg-4  text-center m-auto">
         <div><i class="fas fa-church"></i></div>
@@ -57,16 +57,16 @@
   <!-- Right -->
   <div class="container-fluid social">
     <div class="row justify-content-evenly mx-auto">
-      <div class="col-sm-12 col-md-12 col-lg-6 ">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <h2 class="p-0 m-0  text-white"><i class="fas fa-link"></i> Connect With Us :</h2>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 m-auto">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <nav class="navbar">
           <ul class="navbar list-unstyled col-6 m-auto">
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-facebook-f"></i></a></li>
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-whatsapp"></i></a></li>
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-telegram"></i></a></li>
-            <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fa-solid fa-city"></i></a></li>
+            <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fa regular fa-city"></i></a></li>
             <li class="nav-item"><a href="#" role="button" class="nav-link"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </nav>
@@ -75,7 +75,7 @@
   </div>
   <!-- Right -->
   <!-- Copyright -->
-  <div class="text-center text-white p-1 copyright ">
+  <div class="text-center text-white copyright ">
     <?php echo "©";
     echo date("Y");
     echo " Copyright."; ?><br>

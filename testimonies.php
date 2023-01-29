@@ -13,12 +13,12 @@
         ?>
         <h2 class="my-5">Testimonies</h2>
         <div class="row">
-            <div class=" col-sm-12 col-md-8 col-lg-8 py-5 m-auto">
-                <div id="mytestimony" class="carousel slide" data-bs-ride="carousel">
+            <div class=" col-sm-12 col-md-8 col-lg-8 m-auto">
+                <div id="mytestimony" class="carousel slide card-body" data-bs-ride="carousel">
                     <!-- Wrapper for carousel items -->
                     <div class="carousel-inner">
                         <?php foreach ($posts as $post) : ?>
-                            <div class="carousel-item active">
+                            <div class="carousel-item active p-4">
                                 <div class="img-box"><img src="img/<?php echo $post['img']; ?>" alt=""></div>
                                 <p class="testimonial"><?php echo $post['message']; ?></p>
                                 <p class="overview"><b><?php echo $post['fname']; ?> <?php echo $post['lname']; ?></b></p>
@@ -26,17 +26,17 @@
                         <?php endforeach; ?>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#mytestimony" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#mytestimony" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-4 m-auto text-center">
+        <div class="col-sm-6 col-md-4 col-lg-4  my-4 m-auto text-center">
             <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                 Share Testimony
             </button>

@@ -36,7 +36,7 @@
         } else {
           echo '<div class="carousel-item">';
         }
-        echo '<img class="d-block" width="100%" height="500px" src="' . "gallery/" . $image['image_path'] . '" alt="' . $image['image_title'] . '">';
+        echo '<img class="d-block w-100" height="450px" src="' . "gallery/" . $image['image_path'] . '" alt="' . $image['image_title'] . '">';
         echo '</div>';
         $i++;
       }

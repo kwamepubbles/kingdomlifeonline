@@ -7,31 +7,31 @@ include('components/carousel.php');
 
 <section class="welcome">
     <div class="container-fluid">
-
     </div>
 </section>
+
 <section class="nuggets">
     <div class="container-fluid">
-        <div class="row m-auto">
+        <div class="row m-0 p-0">
             <img class="d-block w-25" src="img/klm-HDlight.png" alt="...">
-            <div class=" text-white p-4" style="background-color: rgba(0, 0, 0, 0.5);">
-                <p class="text-break">
-                <h4>Welcome to Kingdom Life!</h4>
-                Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
+            <div class="col-12">
+                <div class=" text-white p-4" style="background-color: rgba(0, 0, 0, 0.5);">
+                    <p class="text-break">
+                    <h4>Welcome to Kingdom Life!</h4>
+                    Our mission is to spread the word of God and provide resources and support for those seeking a deeper connection with their faith.
 
-                On our website, you'll find a variety of resources including daily devotions and sermons. We also have a section dedicated to prayer and to help you connect with God.
+                    On our website, you'll find a variety of resources including daily devotions and sermons. We also have a section dedicated to prayer and to help you connect with God.
 
-                Our blog features articles written by Christian leaders and members of our community, discussing a wide range of topics such as marriage, parenting, and current events from a biblical perspective.
+                    Our blog features articles written by Christian leaders and members of our community, discussing a wide range of topics such as marriage, parenting, and current events from a biblical perspective.
 
-                In addition to our online resources, we also host regular events such as worship nights and retreats.
+                    In addition to our online resources, we also host regular events such as worship nights and retreats.
 
-                We believe that faith is a journey and we're here to support you every step of the way. We invite you to explore our website and join our community. Together, we can grow in our understanding and love for God.
+                    We believe that faith is a journey and we're here to support you every step of the way. We invite you to explore our website and join our community. Together, we can grow in our understanding and love for God.<br>
 
-                May God bless you and guide you. <br>
-
-                In Christ, <br>
-                [Kingdomlife Team]
-                </p>
+                    In Christ, <br>
+                    [Kingdomlife Team]
+                    </p>
+                </div>
             </div>
         </div>
         <div class="row g-2 mb-0 m-auto">
