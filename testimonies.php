@@ -12,6 +12,7 @@
         }
         ?>
         <h2 class="my-5">Testimonies</h2>
+       
         <div class="row">
             <div class=" col-sm-12 col-md-8 col-lg-8 m-auto">
                 <div id="mytestimony" class="carousel slide card-body" data-bs-ride="carousel">
@@ -60,24 +61,25 @@
                             $lname = htmlspecialchars($_POST['lname']);
                             $message = htmlspecialchars($_POST['message']);
 
+                            $stmt = $plug->prepare("INSERT INTO testimony (img, fname, lname, message) VALUES (:img,:fname,:lname,:message)");
                             if ($stmt->rowCount() == 0) {
-                                $stmt = $plug->prepare("INSERT INTO testimony (img,fname,lname,message) VALUES (:img,:fname,:lname,:message)");
-                                $stmt->bindParam("img", $image, PDO::PARAM_STR);
-                                $stmt->bindParam("fname", $fname, PDO::PARAM_STR);
-                                $stmt->bindParam("lname", $lname, PDO::PARAM_STR);
-                                $stmt->bindParam("message", $message, PDO::PARAM_STR);
+                                $stmt->bindParam('img', $image, PDO::PARAM_STR);
+                                $stmt->bindParam('fname', $fname, PDO::PARAM_STR);
+                                $stmt->bindParam('lname', $lname, PDO::PARAM_STR);
+                                $stmt->bindParam('message', $message, PDO::PARAM_STR);
                                 $result = $stmt->execute();
 
                                 if ($result) {
                                     $msg = '<div class="alert alert-success alert-dismissible fade show" role="alert">Testimony successfully submitted</div>';
-                                } 
+                                } else {
+                                    $msg = '<div class="alert alert-danger alert-dismissible fade show" role="alert">Testimony not submitted! Try again </div>';
+                                }
                             }
                         }
                     } catch (PDOException $e) {
                         exit("Error: " . $e->getMessage());
                     }
                     ?>
-
                     <div class="form-group">
                         <?php $msg; ?>
                     </div>
@@ -96,7 +98,7 @@
                         </div><br>
                         <div class="form-group">
                             <label for="message" class="text-white">Message:</label>
-                            <textarea name="message" id="msg" cols="30" rows="10" class="form-control text-sentence" placeholder="kindly keep it brief" required></textarea>
+                            <textarea name="message" id="msg" cols="30" rows="5" class="form-control text-sentence" placeholder="Your Testimony..." required></textarea>
                         </div><br>
                         <div class="row justify-content-center">
                             <div class="form-group text-center col-4 mt-4">

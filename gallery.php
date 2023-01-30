@@ -1,7 +1,6 @@
 <?php
 include('components/header.php');
 ?>
-<title>Gallery-Kingdomlifeonline.com</title>
 <style>
     #demo {
         height: 100%;
@@ -18,11 +17,6 @@ include('components/header.php');
         margin-bottom: 30px;
     }
 
-    .page-top {
-        margin-top: 85px;
-    }
-
-
     img.zoom {
         width: 100%;
         height: 200px;
@@ -34,6 +28,9 @@ include('components/header.php');
         -ms-transition: all .3s ease-in-out;
     }
 
+    .fancybox-margin {
+        margin-right: 17px;
+    }
 
     .transition {
         -webkit-transform: scale(1.2);
@@ -43,7 +40,6 @@ include('components/header.php');
     }
 
     .modal-header {
-
         border-bottom: none;
     }
 
@@ -73,11 +69,6 @@ include('components/header.php');
         });
     });
 </script>
-<style type="text/css">
-    .fancybox-margin {
-        margin-right: 17px;
-    }
-</style>
 
 
 <!------ Include the above in your HEAD tag ---------->
@@ -88,75 +79,62 @@ include('components/header.php');
 
 
 <!-- Page Content -->
-<div class="container page-top">
-
-    <div class="row">
-
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/1.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/1.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
+<section>
+    <div class="container-fluid pb-5">
+        <div class="row">
+            <div class="col-12 py-5 bg-light">
+                <h2><i class="fa-solid fa-camera-viewfinder me-1 mr-1"></i> Gallery</h2>
+            </div>
         </div>
+        <div class="row px-5">
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/1.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/1.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/2.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/2.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/3.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/3.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
 
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/2.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/2.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
-        </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/4.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/4.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
 
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/3.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/3.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
-        </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/5.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/5.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
 
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/4.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/4.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/6.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/6.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/7.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/7.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <a href="img/8.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
+                    <img src="img/8.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
+                </a>
+            </div>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/5.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/5.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/6.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/6.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/7.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/7.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a href="img/8.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
-                <img src="img/8.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">
-            </a>
-        </div>
-
     </div>
+</section>
 
-</div>
-
-
-
-<!-- Footer 
-<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-  <ol class="breadcrumb justify-content-start mx-4">
-    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house me-1"></i>Home</a></li>
-    <li class="breadcrumb-item"><a href="#"><i class="bi bi-headphones me-1"></i>Podcast</a></li>
-    <li class="breadcrumb-item"><a href="#"><i class="fas fa-camera me-1"></i>Gallery</a></li>
-    <li class="breadcrumb-item"><a href="#"><i class="bi bi-book me-1"></i>Library</a></li>
-    <li class="breadcrumb-item"><a href="#"><i class="fa-solid fa-blog me-1"></i></i>Blog</a></li>
-    <li class="breadcrumb-item"><a href="#"><i class="fa fa-praying-hands me-1"></i>Pray</a></li>
-    <li class="breadcrumb-item"><a href="#"><i class="fas fa-seedling me-1"></i>Seeds</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="#"><i class="fas fa-fax me-1"></i>Contact</a></li>
-  </ol>
-</nav>-->
+<!-- Footer -->
 <footer>
     <!--Grid container-->
     <div class="container-fluid text-white pt-2" style="background-color: #8f6304;">

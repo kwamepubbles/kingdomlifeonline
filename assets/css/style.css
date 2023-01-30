@@ -75,6 +75,12 @@ nav button span {
   color: #fff;
 }
 
+.tick {
+  width: 200px;
+  height: 200px;
+  color: lime;
+}
+
 .social {
   background-color: #380958;
 }
