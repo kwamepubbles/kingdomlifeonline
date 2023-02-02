@@ -46,7 +46,7 @@
                             <img src="<?php //echo $event['img']; ?>" alt="<?php //echo $event['img_desc']; ?>">
                             <div class="row justify-content-center">
                                 <div class=" col-4 text-center m-auto">
-                                    <a href="#" class="btn btn-primary font-weight-bold ">REGISTER</a>
+                                    <a href="event-signup.php" class="btn btn-primary font-weight-bold ">REGISTER</a>
                                 </div>
                             </div>
                         </div>

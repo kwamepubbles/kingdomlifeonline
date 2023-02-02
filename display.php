@@ -17,7 +17,7 @@ include('components/header.php');
 </div>
 
 <div class="container" id="payment-success">
-    <div class="row justify-content-center py-5 m-auto">
+    <div class="row justify-content-center py-5 m-auto" class="alert" role="alert">
         <div class="col-6 p-5">
             <div class="card-body border p-5 text-center">
                 <span><i class="fa-sharp fa-solid fa-circle-check tick" style="color: lime; font-size: 150px;"></i></span>

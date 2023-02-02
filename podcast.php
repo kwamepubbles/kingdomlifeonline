@@ -1,9 +1,9 @@
 <?php
 include('components/header.php');
 ?>
-<section>
+<section class="podcast">
     <div class="container-fluid">
-        <div class="row justify-content-center my-4">
+        <div class="row justify-content-center">
             <div class="col-12 text-bg-light py-5">
                 <h2><i class="fa-solid fa-headphones-simple me-1"></i>Podcasts</h2>
             </div>

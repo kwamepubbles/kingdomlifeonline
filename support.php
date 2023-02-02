@@ -1,11 +1,11 @@
 <?php
 include('components/header.php');
 ?>
-<section>
+<section class="support">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="py-5 text-center text-bg-light">
-                <h2><i class="fa regular fa-donate me-1"></i><br>Seeds</h2>
+                <h2><i class="fa regular fa-donate me-1"></i>Seeds & Offering</h2>
             </div>
         </div>
         <div class="row m-auto justify-content-center">
@@ -40,14 +40,17 @@ include('components/header.php');
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="mobile-money-from" method="$_POST">
                     <div class="card-body">
                         <?php $msg = ""; ?>
-                        <div class="row p-3 input-group">
-                            <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Full Name" required>
+                        <div class="row mb-3 form-floating">
+                            <input type="text" id="floatingInput" name="fullname" class="form-control" placeholder="Full Name" required>
+                            <label for="floatingInput" class="px-5">Full Name</label>
                         </div>
-                        <div class="row p-3 input-group">
-                            <input type="text" id="phone" name="phone" class="form-control" placeholder="MoMo Number" required>
+                        <div class="row mb-3 form-floating">
+                            <input type="number" id="floatingInput" name="phone" class="form-control" placeholder="MoMo Number" required>
+                            <label for="floatingInput" class="px-5">MoMo Number</label>
                         </div>
-                        <div class="row p-3 input-group">
-                            <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" required>
+                        <div class="row mb-3 form-floating">
+                            <input type="number" id="floatingInput" name="amount" class="form-control" placeholder="Amount" required>
+                            <label for="floatingInput" class="px-5">Amount</label>
                         </div>
                         <div class="row">
                             <div class="text-center py-5">

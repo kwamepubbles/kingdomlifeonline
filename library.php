@@ -10,7 +10,7 @@ include('components/header.php');
         </div>
         <div class=" row justify-content-center m-auto">
             <div class="col-12 py-5 mb-5">
-                <p style="font-size: 150px; color:red;" class="text-center m-auto"><i class="fa regular fa-construction"></i></p>
+                <p style="font-size: 150px; color: red;" class="text-center m-auto"><i class="fa regular fa-construction"></i></p>
                 <p class="text-center h4">Sorry! Page under construction, come back later...</p>
                 <div class="row justify-content-center">
                     <p class="text-dark text-center h2 p-2 m-4">Go back to <a class="btn btn-outline-success btn-lg" type="button" href="index.php">Homepage</a></p>

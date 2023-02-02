@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat&family=Lobster+Two&family=Poppins:wght@100&display=swap');
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat&family=Lobster+Two&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html,
 body {
@@ -11,14 +6,42 @@ body {
   margin: auto;
 }
 
+.nuggets img {
+  max-width: 200px;
+  height: auto;
+  float: left;
+}
+
+.nuggets #papa  {
+  max-width: 300px;
+  height: auto;
+  float: right;
+}
+
+/*--------------------------------------
+           Backgrounds                  
+---------------------------------------*/
+.nuggets,
+.sessions,
+.event-bg,
+.prayer-request-form,
+.event-signup-form,
+.timeline-entry,
+.podcast,
+.gallery,
+.blog,
+.support,
+.library {
+  font-family: "poppins", sans-serif;
+  font-weight: light;
+  font-size: 16px;
+}
+
 .nuggets {
   background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: "poppins", sans-serif;
-  font-weight: lighter;
-  font-size: 1.2rem;
 }
 
 .sessions {
@@ -28,6 +51,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .event-bg {
   background-image: url("../../img/lou-batier-5EoWFa_Htdo-unsplash.jpg");
   background-attachment: fixed;
@@ -35,6 +59,36 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.prayer-request-form {
+  background-image: linear-gradient(-225deg, #072546 0%, #f578dc 100%);
+}
+
+.testimony {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.timeline-entry {
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+.event-signup-form {
+  background-image: linear-gradient(-225deg, #072546 0%, #f578dc 100%);
+}
+
+.social {
+  background-color: #380958;
+}
+
+.copyright {
+  background-color: #37343b;
+}
+
+#checkbx {
+  background-color: #3f293e;
+}
+/*--------------------------------------
+           Background-end                
+---------------------------------------*/
 
 h2 {
   color: #333;
@@ -81,15 +135,7 @@ nav button span {
   color: lime;
 }
 
-.social {
-  background-color: #380958;
-}
-
-.copyright {
-  background-color: #37343b;
-}
-
-label {
+.testimony-form label {
   color: rgb(255, 255, 255);
 }
 
@@ -99,10 +145,6 @@ form {
 
 .form-group p a {
   color: white;
-}
-
-#checkbx {
-  background-color: #3f293e;
 }
 
 #darker img {
@@ -123,10 +165,6 @@ footer {
 
 div a {
   text-decoration: none;
-}
-
-.timeline-entry {
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
 }
 
 /* CSS for the timeline 
@@ -167,13 +205,11 @@ div a {
 css for testimonies
 --------------------------------------------
 */
-.testify-bg {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-}
+
 .carousel .carousel-item {
   overflow: hidden;
   color: #999;
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 1.5rem;
   text-align: justify;
   min-height: 300px;
@@ -226,7 +262,7 @@ Contact CSS
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
   font-weight: 1.5rem;
   font-size: 1.2rem;
   color: #fff;
@@ -245,12 +281,12 @@ Contact CSS
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #000000;
-  font-size: 16px;
   height: 60px;
   padding: 10px;
   width: 100%;
   font-family: "poppins", sans-serif;
   font-weight: bold;
+  font-size: 16px;
   padding-left: 30px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -307,7 +343,7 @@ Contact CSS
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   background: #7564e5;
-  font-family: 'Aboreto', cursive;
+  font-family: "Aboreto", cursive;
   cursor: pointer;
   width: 100%;
 }

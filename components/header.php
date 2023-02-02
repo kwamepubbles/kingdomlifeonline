@@ -50,7 +50,7 @@
               <a class="nav-link" href="pray.php"><i class="fa fa-praying-hands me-1"></i>Pray</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="support.php"><i class="fa regular fa-donate me-1"></i>Donate</a>
+              <a class="nav-link" href="support.php"><i class="fa regular fa-donate me-1"></i>Give</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php"><i class="fa regular fa-suitcase me-1"></i>About Us</a>

@@ -2,17 +2,6 @@
 include('components/header.php');
 ?>
 <style>
-    #demo {
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-
-    .green {
-        background-color: #6fb936;
-    }
-
     .thumb {
         margin-bottom: 30px;
     }
@@ -79,14 +68,14 @@ include('components/header.php');
 
 
 <!-- Page Content -->
-<section>
-    <div class="container-fluid pb-5">
+<section class="gallery">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12 py-5 bg-light">
                 <h2><i class="fa-solid fa-camera-viewfinder me-1 mr-1"></i> Gallery</h2>
             </div>
         </div>
-        <div class="row px-5">
+        <div class="row p-5">
             <div class="col-lg-3 col-md-4 col-sm-6 thumb">
                 <a href="img/1.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="fancybox" rel="ligthbox">
                     <img src="img/1.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=650&amp;w=940" class="zoom img-fluid" alt="">

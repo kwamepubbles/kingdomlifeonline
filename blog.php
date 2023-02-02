@@ -1,17 +1,17 @@
 <?php
 include('components/header.php');
 ?>
-<section>
+<section class="blog">
     <div class="container-fluid p-0 m-0">
         <div class=" row justify-content-center">
-            <div class="col-12 text-bg-light py-4">
+            <div class="col-12 text-bg-light py-5">
                 <h2><i class="fa-solid fa-blog me-1"></i>Blog</h2>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="card-body w-auto h-100" style=" margin-left:-15px; margin-right:-20px; background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );">
-                        <p class="text-white p-5">We discuss christian content here.</p>
+                    
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ include('components/header.php');
                         <?php foreach ($posts as $post) : ?>
 
                             <div class="posts border p-4 m-3" id="posts">
-                                <h4 class="text-center text-bg-dark p-2"> <?php echo $post['title']; ?></h4>
+                                <h4 class="text-left p-2"> <?php echo $post['title']; ?></h4>
                                 <p class="text-break"> <?php echo $post['body']; ?></p>
                                 <p><i>
                                         <h6>Author: <?php echo $post['author']; ?> </h6>
