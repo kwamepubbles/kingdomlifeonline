@@ -42,15 +42,15 @@ include('components/header.php');
                         <?php $msg = ""; ?>
                         <div class="row mb-3 form-floating">
                             <input type="text" id="floatingInput" name="fullname" class="form-control" placeholder="Full Name" required>
-                            <label for="floatingInput" class="px-5">Full Name</label>
+                            <label for="floatingInput" class="px-auto">Full Name</label>
                         </div>
                         <div class="row mb-3 form-floating">
                             <input type="number" id="floatingInput" name="phone" class="form-control" placeholder="MoMo Number" required>
-                            <label for="floatingInput" class="px-5">MoMo Number</label>
+                            <label for="floatingInput" class="px-auto">MoMo Number</label>
                         </div>
                         <div class="row mb-3 form-floating">
                             <input type="number" id="floatingInput" name="amount" class="form-control" placeholder="Amount" required>
-                            <label for="floatingInput" class="px-5">Amount</label>
+                            <label for="floatingInput" class="px-auto">Amount</label>
                         </div>
                         <div class="row">
                             <div class="text-center py-5">

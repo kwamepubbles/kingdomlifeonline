@@ -22,6 +22,10 @@ include('components/header.php');
                 <h2 class="my-5"><i class="fas fa-person-praying me-1"></i>Let's Pray </h2>
             </div>
         </div>
+        
+        <video src="img/praying.mp4" type="video/mp4" autoplay muted loop class="video-bg">
+    
+        </video>
 
         <div class="row">
             <div class="col-md-8 m-auto">
@@ -29,23 +33,23 @@ include('components/header.php');
                     <div class="row p-5 event-area text-center">
                         <div class="col-sm-12 col-md-8 mb-3 form-floating m-auto">
                             <input type="text" class="form-control" placeholder="Full Name" id="floatingInput" required>
-                            <label for="floatingInput" class="px-5"> Full Name </label>
+                            <label for="floatingInput" class="px-3"> Full Name </label>
                         </div>
                         <div class="col-sm-12 col-md-4 form-floating mb-3">
                             <input type="tel" class="form-control" placeholder="Contact" id="floatingInput" required>
-                            <label for="floatingInput" class="px-5"> Contact </label>
+                            <label for="floatingInput" class="px-3"> Contact </label>
                         </div>
                         <div class="col-sm-12 col-md-8 mb-3 form-floating input-group">
-                            <span class="input-group-text px-5"for="floatingInputGroup1">Supporting Documents</span>
-                            <input type="file" class="form-control p-3" placeholder="Upload supporting documents" id="floatingInputGroup1" required>
+                            <span class="input-group-text px-1" for="floatingInputGroup1">Supporting Documents</span>
+                            <input type="file" class="form-control p-3" placeholder="Upload supporting documents" id="floatingInputGroup1">
                         </div>
 
                         <div class="col-12 form-floating mb-3 m-auto">
                             <textarea type="text" class="form-control" placeholder="Enter prayer request..." id="floatingTextarea" id="specialneeds" style="height: 200px" required></textarea>
-                            <label for="floatingTextarea" class="px-5">Enter prayer request...</label>
+                            <label for="floatingTextarea" class="px-3">Enter prayer request...</label>
                         </div>
-                        <div class="col-6 mx-auto ">
-                            <button class="btn btn-success btn-md" type="submit">Submit Request</button>
+                        <div class="col-4 justify-content-center my-3 m-auto ">
+                            <button class="btn-contact-bg" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>

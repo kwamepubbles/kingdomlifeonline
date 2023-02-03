@@ -43,7 +43,7 @@
         <div><i class="fas fa-headset"></i></div>
         <h6 class="text-uppercase">Contact </h6>
         <ul class="list-unstyled">
-          <li class="text-break"><a><i class="fa fa-map-marker"></i> University of Ghana, Legon. Accra-GH</a></li>
+          <li class="text-break"><a><i class="fa fa-map-marker"></i> University of Ghana,<br> Legon. Accra-GH</a></li>
           <li><a><i class="fas fa-envelope"></i> kingdomlife2233@gmail.com</a></li>
           <li><a><i class="fas fa-phone"></i> (+233) 234 567 88</a></li>
         </ul>

@@ -20,9 +20,9 @@
                     <div class="carousel-inner">
                         <?php foreach ($posts as $post) : ?>
                             <div class="carousel-item active p-4">
-                                <div class="img-box"><img src="img/<?php echo $post['img']; ?>" alt=""></div>
-                                <p class="testimonial"><?php echo $post['message']; ?></p>
-                                <p class="overview"><b><?php echo $post['fname']; ?> <?php echo $post['lname']; ?></b></p>
+                                <div class="img-box"><img src="img/<?php echo $post['img'];?>" alt=""></div>
+                                <p class="testimonial"><?php echo $post['message'];?></p>
+                                <p class="overview"><b><?php echo $post['fname'];?> <?php echo $post['lname'];?></b></p>
                             </div>
                         <?php endforeach; ?>
                     </div>
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-4  my-4 m-auto text-center">
-            <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+            <button class="btn-contact-bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                 Share Testimony
             </button>
         </div>

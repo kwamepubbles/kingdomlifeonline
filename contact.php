@@ -47,7 +47,7 @@ include('components/header.php');
                                     </div>
                                     <div class="col-4 justify-content-center my-3 m-auto">
                                         <div class="send-button">
-                                            <button type="submit" value="Send message" name="submit" id="submitButton" class="btn-contact-bg" title="Submit Your Message!">Send Message</button>
+                                            <button type="submit" value="Send message" name="submit" id="submitButton" class="btn-contact-bg" title="Submit Your Message!">Send</button>
                                         </div>
                                     </div>
                                 </div>
