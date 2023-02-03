@@ -1,8 +1,9 @@
 <?php
 include('components/header.php');
 ?>
-<section>
+<section class="contact-wall-bg">
     <div id="contact" class="section-padding">
+        <img src="img/hanukkah.jpg" class="contact-img">
         <div class="container-fluid">
             <div class="section-title">
                 <div class="row justify-content-center contact-wall">
@@ -26,8 +27,8 @@ include('components/header.php');
                             </div>
                         </div>
                     </div>
+                    <h2 class="my-4 text-white">Get in Touch</h2>
                 </div>
-                <h2 class="my-4">Get in Touch</h2>
                 <div class="row contact-area">
                     <div class="col-lg-8">
                         <div class="contact">

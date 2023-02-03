@@ -5,11 +5,6 @@ include('components/header.php');
 include('components/carousel.php');
 ?>
 
-<section class="welcome">
-    <div class="container-fluid">
-    </div>
-</section>
-
 <section class="nuggets">
     <video src="img/Bible.mp4" type="video/mp4" autoplay muted loop class="video-bg">
 

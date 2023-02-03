@@ -3,7 +3,7 @@ include('components/header.php');
 ?>
 <section class="prayer-request-form">
     <div class="container-fluid">
-        <div class="row">
+        <!--<div class="row">
             <div class="col-3 p-0 m-0">
                 <img src="img/3.jpeg" class="img-fluid">
             </div>
@@ -16,7 +16,7 @@ include('components/header.php');
             <div class="col-3 p-0 m-0">
                 <img src="img/couple-husband-wife.jpg" class="img-fluid">
             </div>
-        </div>
+        </div>-->
         <div class="row">
             <div class="text-center bg-light">
                 <h2 class="my-5"><i class="fas fa-person-praying me-1"></i>Let's Pray </h2>

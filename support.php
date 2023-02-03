@@ -8,16 +8,18 @@ include('components/header.php');
                 <h2><i class="fa regular fa-donate me-1"></i>Seeds & Offering</h2>
             </div>
         </div>
-        <div class="row m-auto justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-6 hstack">
-                <div class="col-4">
-                    <img src="img/momo.jpg" class="img-fluid" alt="...">
-                </div>
-                <div class="col-4">
-                    <img src="img/AirtelTigo-Money.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col-4">
-                    <img src="img/vodafone-cash.png" class="img-fluid" alt="...">
+        <div class="col-4 m-auto">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8 col-lg-6 hstack">
+                    <div class="col-4">
+                        <img src="img/momo.jpg" class="img-fluid p-0">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/AirtelTigo-Money.png" class="img-fluid p-0">
+                    </div>
+                    <div class="col-4">
+                        <img src="img/vodafone-cash.png" class="img-fluid p-0">
+                    </div>
                 </div>
             </div>
         </div>

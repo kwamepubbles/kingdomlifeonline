@@ -11,12 +11,24 @@ p {
   font-weight: 300;
   font-size: 14px;
 }
-.nuggets, .prayer-request-form, .event-signup-form {
+
+.nuggets, .prayer-request-form, .event-signup-form, .contact-wall-bg {
   overflow: hidden;
   position: relative;
   min-height: 50vh;
 }
+
 .video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.contact-img {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -48,10 +60,19 @@ p {
 ---------------------------------------*/
 
 .nuggets {
-  background-image: linear-gradient(to top, rgb(51, 8, 103) 0%, rgba(255, 255, 255, 0.25) 100%);
+  background-image: linear-gradient(to top, rgba(51, 8, 103) 0%, rgba(255, 255, 255, 0.25) 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.contact-wall {
+  background-image: linear-gradient(to top, rgba(51, 8, 103, 0.79) 0%, rgb(244, 246, 248) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  z-index: -1;
 }
 
 .sessions {
@@ -269,16 +290,6 @@ Contact CSS
   background-size: cover;
   background-position: center;
 }
-.contact-wall {
-  background-image: linear-gradient(to top, #330867 0%, #fff 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: "Lobster Two", cursive;
-  font-weight: 1.5rem;
-  font-size: 1.2rem;
-  color: #fff;
-}
 
 @media only screen and (max-width: 768px) {
   .contact {
@@ -446,42 +457,56 @@ Responsiive
 */
 
 @media only screen and (max-width: 768px) {
-  .welcome {
-    background-image: linear-gradient(to top, #330867 0%, #fff 100%);
-    background-attachment: inherit;
-    background-repeat: no-repeat;
-    background-position: absolute;
-    background-size: cover;
-  }
 
-  .papa {
-    display: block;
-    width: 50vw;
-    height: auto;
-    margin: auto;
-  }
 
-  .nuggets {
-    background-image: linear-gradient(to top, rgb(51, 8, 103) 0%, rgba(255, 255, 255, 0.25) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  
+.nuggets {
+  background-image: linear-gradient(to top, rgba(51, 8, 103) 0%, rgba(255, 255, 255, 0.25) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .sessions {
-    background-image: url("../../img/mount.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.contact-wall {
+  background-image: linear-gradient(to top, rgba(51, 8, 103, 0.79) 0%, rgb(244, 246, 248) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+  z-index: -1;
+}
 
-  .papa {
-    display: block;
-    width: 50vw;
-    height: auto;
-    margin: auto;
-  }
+.sessions {
+  background-image: url("../../img/mount.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.event-bg {
+  background-image: url("../../img/lou-batier-5EoWFa_Htdo-unsplash.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.prayer-request-form {
+  background-image: linear-gradient(-225deg, rgba(7, 38, 70, 0.738) 0%, rgba(245, 120, 220, 0.5) 100%);
+}
+
+.testimony {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.timeline-entry {
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+.event-signup-form {
+  background-image: linear-gradient(-225deg, rgba(7, 38, 70, 0.738) 0%, rgba(245, 120, 220, 0.5) 100%);
+}
+
 
   .social {
     background-color: #380958;
