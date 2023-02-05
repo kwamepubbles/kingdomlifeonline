@@ -12,7 +12,7 @@ include('components/header.php');
         <div class="row">
             <div class="col-md-8 m-auto">
                 <form class="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="$_POST">
-                    <div class="row p-5 event-area text-center">
+                    <div class="row py-5 event-area text-center">
                         <div class="col-sm-12 col-md-12 mb-3 m-auto form-floating">
                             <input type="text" class="form-control" placeholder="Full Name" id="floatingInput" required>
                             <label for="floatingInput" class="px-4">Full Name</label>

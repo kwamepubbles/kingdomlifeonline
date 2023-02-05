@@ -20,7 +20,7 @@
                     <div class="carousel-inner">
                         <?php foreach ($posts as $post) : ?>
                             <div class="carousel-item active p-4">
-                                <div class="img-box"><img src="img/<?php echo $post['img'];?>" alt=""></div>
+                                <div class="img-box"><img src="img/<?php echo $post['img'];?>"></div>
                                 <p class="testimonial"><?php echo $post['message'];?></p>
                                 <p class="overview"><b><?php echo $post['fname'];?> <?php echo $post['lname'];?></b></p>
                             </div>

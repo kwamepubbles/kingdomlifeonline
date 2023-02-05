@@ -12,7 +12,11 @@ p {
   font-size: 14px;
 }
 
-.nuggets, .prayer-request-form, .event-signup-form, .contact-wall-bg {
+.nuggets,
+.prayer-request-form,
+.event-signup-form,
+.contact-wall-bg,
+.podcasts {
   overflow: hidden;
   position: relative;
   min-height: 50vh;
@@ -44,7 +48,7 @@ p {
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-300px);
+    transform: translateX(300px);
   }
   to {
     transform: translateX(0px);
@@ -60,19 +64,39 @@ p {
 ---------------------------------------*/
 
 .nuggets {
-  background-image: linear-gradient(to top, rgba(51, 8, 103) 0%, rgba(255, 255, 255, 0.25) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgba(51, 8, 103) 0%,
+    rgba(255, 255, 255, 0.25) 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .contact-wall {
-  background-image: linear-gradient(to top, rgba(51, 8, 103, 0.79) 0%, rgb(244, 246, 248) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgba(51, 8, 103, 0.79) 0%,
+    rgb(244, 246, 248) 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
   z-index: -1;
+}
+
+.podcasts {
+  background-image: linear-gradient(
+    to top,
+    rgba(51, 8, 103, 0.79) 0%,
+    rgba(244, 246, 248, 0.712) 100%
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sessions {
@@ -92,18 +116,27 @@ p {
 }
 
 .prayer-request-form {
-  background-image: linear-gradient(-225deg, rgba(7, 38, 70, 0.738) 0%, rgba(245, 120, 220, 0.5) 100%);
+  background-image: linear-gradient(
+    -225deg,
+    rgba(7, 38, 70, 0.738) 0%,
+    rgba(245, 120, 220, 0.5) 100%
+  );
 }
 
 .testimony {
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
-.timeline-entry {
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+.event-entry {
+  background-image: linear-gradient(135deg, #8bc5ec9f 0%, rgba(149, 153, 226, 0.658) 100%);
 }
+
 .event-signup-form {
-  background-image: linear-gradient(-225deg, rgba(7, 38, 70, 0.738) 0%, rgba(245, 120, 220, 0.5) 100%);
+  background-image: linear-gradient(
+    -225deg,
+    rgba(7, 38, 70, 0.738) 0%,
+    rgba(245, 120, 220, 0.5) 100%
+  );
 }
 
 .social {
@@ -114,9 +147,6 @@ p {
   background-color: #37343b;
 }
 
-#checkbx {
-  background-color: #3f293e;
-}
 /*--------------------------------------
            Background-end                
 ---------------------------------------*/
@@ -168,6 +198,12 @@ nav button span {
   color: lime;
 }
 
+.search {
+  min-width: 10vw;
+  height: 100vh;
+  margin: auto;
+}
+
 .testimony-form label {
   color: rgb(255, 255, 255);
 }
@@ -178,11 +214,6 @@ form {
 
 .form-group p a {
   color: white;
-}
-
-#darker img {
-  margin-right: 15px;
-  position: static;
 }
 
 footer div ul li a {
@@ -200,42 +231,42 @@ div a {
   text-decoration: none;
 }
 
-/* CSS for the timeline 
-#timeline {
-  position: relative;
+/*--------------------------
+     CSS for the Event
+---------------------------*/
+
+.event {
   width: 100%;
   margin: 0 auto;
 }
 
-.timeline-entry {
+.event-entry {
   position: relative;
   width: 50%;
   margin: 0 auto;
   text-align: center;
 }
 
-.timeline-date {
-  position: absolute;
+.event-date {
+  position: relative;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgb(148, 12, 245);
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
 }
 
-.timeline-content {
-  background: #fff;
+.event-content {
+  position: relative;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-*/
+
+
 /*
 --------------------------------------------
-css for testimonies
+        css for testimonies
 --------------------------------------------
 */
 
@@ -278,9 +309,11 @@ css for testimonies
   text-transform: uppercase;
   color: #9d16aa;
 }
+
+
 /*
 ---------------------------------------------
-Contact CSS
+              Contact CSS
 ---------------------------------------------
 */
 
@@ -289,12 +322,6 @@ Contact CSS
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact {
-    margin-bottom: 60px;
-  }
 }
 
 .contact input {
@@ -368,7 +395,7 @@ Contact CSS
   background: #7564e5;
   font-family: "poppins", cursive;
   cursor: pointer;
-  width: 100%;
+  min-width: 500px;
 }
 
 .btn-contact-bg:hover,
@@ -377,19 +404,15 @@ Contact CSS
   color: #fff;
 }
 
-/*START ADDRESS*/
+/*--------------------
+    contact ADDRESS
+  --------------------*/
 
 .single_address {
   overflow: hidden;
   margin-bottom: 10px;
   padding-left: 40px;
   background-color: #fff;
-}
-
-@media only screen and (max-width: 768px) {
-  .single_address {
-    padding-left: 0px;
-  }
 }
 
 .single_address i {
@@ -438,18 +461,22 @@ Contact CSS
   margin-bottom: 15px;
   background-color: #fff;
 }
+
 .section-title p {
   padding: 0 10px;
   width: 70%;
   margin: auto;
   letter-spacing: 1px;
 }
+
 .section-title {
   margin-bottom: 60px;
 }
+
 .text-center {
   text-align: center !important;
 }
+
 /*
 ---------------------------------------------
 Responsiive
@@ -457,56 +484,89 @@ Responsiive
 */
 
 @media only screen and (max-width: 768px) {
+  .nuggets {
+    background-image: linear-gradient(
+      to top,
+      rgba(51, 8, 103) 0%,
+      rgba(255, 255, 255, 0.25) 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
+  .contact-wall {
+    background-image: linear-gradient(
+      to top,
+      rgba(51, 8, 103, 0.79) 0%,
+      rgb(244, 246, 248) 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    z-index: -1;
+  }
 
-  
-.nuggets {
-  background-image: linear-gradient(to top, rgba(51, 8, 103) 0%, rgba(255, 255, 255, 0.25) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .podcasts {
+    background-image: linear-gradient(
+      to top,
+      rgba(51, 8, 103, 0.79) 0%,
+      rgba(244, 246, 248, 0.712) 100%
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.contact-wall {
-  background-image: linear-gradient(to top, rgba(51, 8, 103, 0.79) 0%, rgb(244, 246, 248) 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #fff;
-  z-index: -1;
-}
+  .sessions {
+    background-image: url("../../img/mount.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.sessions {
-  background-image: url("../../img/mount.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .event-bg {
+    background-image: url("../../img/lou-batier-5EoWFa_Htdo-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.event-bg {
-  background-image: url("../../img/lou-batier-5EoWFa_Htdo-unsplash.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  .contact {
+    margin-bottom: 60px;
+  }
 
-.prayer-request-form {
-  background-image: linear-gradient(-225deg, rgba(7, 38, 70, 0.738) 0%, rgba(245, 120, 220, 0.5) 100%);
-}
+  .single_address {
+    padding-left: 0px;
+  }
 
-.testimony {
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-}
+  .prayer-request-form {
+    background-image: linear-gradient(
+      -225deg,
+      rgba(7, 38, 70, 0.738) 0%,
+      rgba(245, 120, 220, 0.5) 100%
+    );
+  }
 
-.timeline-entry {
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-}
-.event-signup-form {
-  background-image: linear-gradient(-225deg, rgba(7, 38, 70, 0.738) 0%, rgba(245, 120, 220, 0.5) 100%);
-}
+  .testimony {
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  }
 
+  .event-entry {
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+  }
+
+  .event-signup-form {
+    background-image: linear-gradient(
+      -225deg,
+      rgba(7, 38, 70, 0.738) 0%,
+      rgba(245, 120, 220, 0.5) 100%
+    );
+  }
 
   .social {
     background-color: #380958;
@@ -516,20 +576,34 @@ Responsiive
     background-color: #37343b;
   }
 
+
+
+
+
+
+
+
+
+
+
   .timeline::before {
     left: 50px;
   }
+
   .timeline .timeline-img {
     left: 50px;
   }
+
   .timeline .timeline-content {
     max-width: 100%;
     width: auto;
     margin-left: 70px;
   }
+
   .timeline .timeline-item:nth-child(even) .timeline-content {
     float: none;
   }
+
   .timeline .timeline-item:nth-child(odd) .timeline-content::after {
     content: "";
     position: absolute;

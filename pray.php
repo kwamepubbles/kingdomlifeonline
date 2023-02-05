@@ -28,9 +28,9 @@ include('components/header.php');
         </video>
 
         <div class="row">
-            <div class="col-md-8 m-auto">
+            <div class="col-sm-12 col-md-8 m-auto">
                 <form class="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="$_POST">
-                    <div class="row p-5 event-area text-center">
+                    <div class="row py-5 event-area text-center">
                         <div class="col-sm-12 col-md-8 mb-3 form-floating m-auto">
                             <input type="text" class="form-control" placeholder="Full Name" id="floatingInput" required>
                             <label for="floatingInput" class="px-3"> Full Name </label>
@@ -48,7 +48,7 @@ include('components/header.php');
                             <textarea type="text" class="form-control" placeholder="Enter prayer request..." id="floatingTextarea" id="specialneeds" style="height: 200px" required></textarea>
                             <label for="floatingTextarea" class="px-3">Enter prayer request...</label>
                         </div>
-                        <div class="col-4 justify-content-center my-3 m-auto ">
+                        <div class="col-6 justify-content-center my-3 m-auto p-3 ">
                             <button class="btn-contact-bg" type="submit">Submit</button>
                         </div>
                     </div>

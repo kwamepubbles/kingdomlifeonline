@@ -31,16 +31,20 @@ include('components/carousel.php');
 </section>
 <section class="sessions">
     <div class="container-fluid">
-        <h2 class="text-center">Our Programs</h2>
-        <div class="row gx-5 p-3">
-            <div class="col-sm-12 col-md-8 col-lg-4 p-4 m-auto">
-                <img src="img/sots.jpg" class="d-block w-100 h-auto p-4" alt="...">
-            </div>
-            <div class="col-sm-12 col-md-8 col-lg-4 m-auto">
-                <img src="img/sn2.jpg" class=" d-block w-100 h-auto p-4" alt="...">
-            </div>
-            <div class="col-sm-12 col-md-8 col-lg-4 m-auto">
-                <img src="img/sn.jpg" class=" d-block w-100 h-auto p-4" alt="...">
+        <div class="row py-3">
+            <h2 class="text-center">Our Programs</h2>
+        </div>
+        <div class="row m-auto">
+            <div class="col-12 hstack g-3 ">
+                <div class="col-4">
+                    <img src="img/sots.jpg" class="d-block w-100 h-auto p-3">
+                </div>
+                <div class="col-4">
+                    <img src="img/sn2.jpg" class=" d-block w-100 h-auto p-3">
+                </div>
+                <div class="col-4">
+                    <img src="img/sn.jpg" class=" d-block w-100 h-auto p-3">
+                </div>
             </div>
         </div>
     </div>

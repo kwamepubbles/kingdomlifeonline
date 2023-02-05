@@ -39,8 +39,8 @@ include('components/header.php');
             }
             ?>
             <div class="col-sm-8 col-md-6 col-lg-4">
-                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="mobile-money-from" method="$_POST">
-                    <div class="card-body">
+                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="mobile-money-form" method="$_POST">
+                    <div class="card-body px-3">
                         <?php $msg = ""; ?>
                         <div class="row mb-3 form-floating">
                             <input type="text" id="floatingInput" name="fullname" class="form-control" placeholder="Full Name" required>
@@ -56,42 +56,39 @@ include('components/header.php');
                         </div>
                         <div class="row">
                             <div class="text-center py-5">
-                                <button class="btn btn-outline-success btn-lg" type="submit" name="submit">Give<i class="fa regular fa-donate ms-1"></i></button>
+                                <button class="btn-contact-bg" type="submit" name="submit" onclick=run();>Give<i class="fa regular fa-donate ms-1"></i></button>
                             </div>
                         </div>
                         <script>
-                            var form = document.getElementById("mobile-money-form");
-                            form.addEventListener("submit", function(e) {
-                                e.preventDefault();
-                                var momoNumber = document.getElementById("fullname").value;
-                                var phoneNumber = document.getElementById("phone").value;
-                                var paymentAmount = document.getElementById("amount").value;
+                            import fetch from'assets/js/node_modules/node-fetch';
 
-                                // Use payment gateway provider's API to send mobile money information
-                                var data = {
-                                    momoNumber: momoNumber,
-                                    phoneNumber: phoneNumber,
-                                    paymentAmount: paymentAmount
-                                };
-                                var xhr = new XMLHttpRequest();
-                                xhr.open("POST", "https://smsc.hubtel.com/v1/messages/send?clientsecret=wqzdimfy&clientid=zcfjsedh&from=KingdomLife&to=0543246671&content=This+Is+A+Test+Message", true);
-                                xhr.setRequestHeader("Content-Type", "application/json");
-                                xhr.onreadystatechange = function() {
-                                    if (xhr.readyState === 4 && xhr.status === 200) {
-                                        var response = JSON.parse(xhr.responseText);
-                                        if (response.status === "success") {
-                                            // Handle successful transaction
-                                            alert("Payment successful!");
-                                            // Redirect to thank you page
-                                            window.location.href = "thank-you.html";
-                                        } else {
-                                            // Handle error
-                                            alert("Error: " + response.message);
-                                        }
+                            async function run() {
+                                const mobileNumber = 'YOUR_mobileNumber_PARAMETER';
+                                const resp = await fetch(
+                                    `https://devp-reqsendmoney-230622-api.hubtel.com/request-money/${mobileNumber}`, {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                            Authorization: 'Basic ' + Buffer.from('<username>:<password>').toString('base64')
+                                        },
+                                        body: JSON.stringify({
+                                            amount: 1,
+                                            title: 'string',
+                                            description: 'string',
+                                            clientReference: 'string',
+                                            callbackUrl: 'http://example.com',
+                                            cancellationUrl: 'http://example.com',
+                                            returnUrl: 'http://example.com',
+                                            logo: 'http://example.com'
+                                        })
                                     }
-                                };
-                                xhr.send(JSON.stringify(data));
-                            });
+                                );
+
+                                const data = await resp.json();
+                                console.log(data);
+                            }
+
+                            run();
                         </script>
 
                     </div>
