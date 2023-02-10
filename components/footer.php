@@ -84,6 +84,7 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+<script src="assets/js/app.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
