@@ -22,7 +22,7 @@
                         <div class="event-content text-center m-auto p-4">
                             <h3 class="text-center text-uppercase m-auto"><?php echo $event['title']; ?></h3><br>
                             <h1 class="event-date m-auto" id="event-date" style="font-size: 3rem;"><?php echo $event['date']; ?></h1><br>
-                            <p class="text-center m-auto"><?php echo $event['description']; ?></p>
+                            <p class="text-center m-auto h4"><?php echo $event['description']; ?></p>
                             <img class="img-fluid w-50" src="img/<?php echo $event['img']; ?>">
                             <div class="timer-container">
                                 <?php //<div class="leftside-heading">
@@ -37,7 +37,7 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class=" col-6 text-center p-4 m-auto">
-                                    <a href="event-signup.php" class="btn btn-primary font-weight-bold ">REGISTER</a>
+                                    <a href="event-signup.php" class="btn-contact-bg font-weight-bold ">REGISTER</a>
                                 </div>
                             </div>
                         </div>
