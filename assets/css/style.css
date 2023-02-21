@@ -460,20 +460,21 @@ div a {
 .btn-contact-bg {
   border-radius: 30px;
   color: #fff;
-  padding: 15px 27px;
+  padding: 15px 15px;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #7564e5;
+  background: #080137;
   font-family: "poppins", cursive;
   cursor: pointer;
-  min-width: 500px;
+  width: 100%;
+  margin: auto;
 }
 
 .btn-contact-bg:hover,
 .btn-contact-bg:focus {
-  background: #49398a50;
+  background: #1c028650;
   color: #fff;
 }
 

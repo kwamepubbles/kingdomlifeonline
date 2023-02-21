@@ -55,7 +55,7 @@ include('components/header.php');
                             <label for="floatingInput" class="px-auto">Amount</label>
                         </div>
                         <div class="row">
-                            <div class="text-center py-5">
+                            <div class="col-12 text-center py-5">
                                 <button class="btn-contact-bg" type="submit" name="submit" onclick=run();>Give<i class="fa regular fa-donate ms-1"></i></button>
                             </div>
                         </div>
