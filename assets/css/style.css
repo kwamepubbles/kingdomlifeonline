@@ -29,7 +29,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 100%;
-  min-height: 200%;
+  min-height: 250%;
 }
 
 .contact-img {
@@ -582,8 +582,9 @@ Responsiive
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 100%;
-    min-height: 250%;
+    min-height: 300%;
   }
+
   .nuggets {
     background-image: linear-gradient(
       to top,

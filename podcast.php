@@ -55,7 +55,7 @@ include('components/header.php');
             </div>
         </div>
         <div class="row justify-content-center py-3 m-auto">
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-sm-6 col-md-3 text-center">
                 <nav aria-label="...">
                     <ul class="pagination">
                         <li class="page-item disabled">

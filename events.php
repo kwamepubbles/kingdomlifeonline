@@ -36,7 +36,7 @@
                                 //</div>?>
                             </div>
                             <div class="row justify-content-center">
-                                <div class=" col-6 text-center p-4 m-auto">
+                                <div class=" col-2 text-center py-4 m-auto">
                                     <a href="event-signup.php" class="btn-contact-bg font-weight-bold ">REGISTER</a>
                                 </div>
                             </div>
