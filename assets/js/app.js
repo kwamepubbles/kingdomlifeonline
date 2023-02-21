@@ -20,7 +20,7 @@ events.forEach(function (event) {
 
 // ===============================Countdown content==============================================
 
-let expireDate = new Date("Feb,14 2023 00:00:00").getTime();
+let expireDate = new Date("Feb,10 2023 10:33:00").getTime();
 
 function interval() {
   let current = new Date().getTime();

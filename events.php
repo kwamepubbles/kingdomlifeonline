@@ -23,20 +23,20 @@
                             <h3 class="text-center text-uppercase m-auto"><?php echo $event['title']; ?></h3><br>
                             <h1 class="event-date m-auto" id="event-date" style="font-size: 3rem;"><?php echo $event['date']; ?></h1><br>
                             <p class="text-center m-auto"><?php echo $event['description']; ?></p>
-                            <img class="img-fluid w-25" src="img/<?php echo $event['img']; ?>">
+                            <img class="img-fluid w-50" src="img/<?php echo $event['img']; ?>">
                             <div class="timer-container">
-                                <div class="leftside-heading">
-                                    Countdown
-                                </div>
-                                <div class="count-down-wrapper">
+                                <?php //<div class="leftside-heading">
+                                    //Countdown
+                                //</div>
+                                //<div class="count-down-wrapper">
 
-                                    <div id="count-down-content">
+                                    //<div id="count-down-content">
 
-                                    </div>
-                                </div>
+                                    //</div>
+                                //</div>?>
                             </div>
                             <div class="row justify-content-center">
-                                <div class=" col-4 text-center m-auto">
+                                <div class=" col-6 text-center p-4 m-auto">
                                     <a href="event-signup.php" class="btn btn-primary font-weight-bold ">REGISTER</a>
                                 </div>
                             </div>
