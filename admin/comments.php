@@ -1,8 +1,7 @@
 <?php
-include('db.config.php');
+include('./scripts/db.config.php');
 function time_elapsed_string($datetime, $full = false)
 {
-
     $now = new DateTime;
     $ago = new DateTime($datetime);
     $diff = $now->diff($ago);
