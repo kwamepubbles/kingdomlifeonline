@@ -1,5 +1,4 @@
 <?php
-include('./scripts/db.config.php');
 function time_elapsed_string($datetime, $full = false)
 {
     $now = new DateTime;
@@ -13,10 +12,10 @@ function time_elapsed_string($datetime, $full = false)
     );
 
     foreach ($string as $k => &$v) {
-        if ($diff->$K) {
+        if ($diff->$k) {
             $v = $k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
         } else {
-            unset($string[$K]);
+            unset($string[$k]);
         }
     }
     //End of foreach
@@ -28,7 +27,7 @@ function time_elapsed_string($datetime, $full = false)
 function show_comment($comment, $comments = [], $filters = [])
 {
     //convert new lines
-    $content = n12br(htmlspecialchars($comment['content'], ENT_QUOTES));
+    $content = n12br (htmlspecialchars($comment['content'], ENT_QUOTES));
     //ALLowed html tags
     $content = str_ireplace(
         [
@@ -52,7 +51,7 @@ function show_comment($comment, $comments = [], $filters = [])
     $html = '
         <div class="comment">
             <div class="img">
-                <img src="' . (!empty($comment['img']) ? htmlspecialchars($comment['img'], ENT_QUOTES) : DEFAULT_PROFILE_IMAGE) . 'width="48" height="88" alt="Comment Profile Image">
+                <img src="' . (!empty($comment['img']) ? htmlspecialchars($comment['img'], ENT_QUOTES) : DEFAULT_PROFILE_IMAGE) . '" width="48" height="88" alt="Comment Profile Image">
             </div>
 
             <div class="con">
@@ -145,6 +144,7 @@ if (isset($_POST['name'], $_POST['content'], $_POST['parent_id'], $_POST['img_ur
 //Vote buttons
 if (isset($_GET['vote'], $_GET['comment_id'])) {
     $stmt = $plug->prepare('UPDATE comments SET votes = votes + 1 WHERE id = ?');
+
     //cookie exists for this comment
     if (!isset($_COOKIE['vote_' . $_GET['comment_id']])) {
         $stmt = $plug->prepare('UPDATE comments SET votes = votes' . ($_GET['vote'] == 'up' ? '+' : '-') . ' 1 WHERE id = ?');
@@ -152,6 +152,7 @@ if (isset($_GET['vote'], $_GET['comment_id'])) {
         //Set cookie to prevent users from voting multiple times
         setcookie('vote_' . $_GET['comments_id'], 'true', time() + (10 * 365 * 24 * 60 * 60), '/');
     } //End of cookie
+
     //Retrieve the number of vote
     $stmt = $plug->prepare('SELECT votes FROM comments WHERE id ');
     $stmt->execute([$_GET['comment_id']]);
@@ -173,9 +174,9 @@ if (isset($_GET['sort_by'])) {
 }
 
 //Get all comments by the page Id
-$stmt->$plug->prepare('SELECT * FROM comments WHERE page_id = :page_id AND approved = 1' . $sort_by . ' ' . $limit);
+$stmt = $plug->prepare('SELECT * FROM comments WHERE page_id = :page_id AND approved = 1 ' . $sort_by . ' ' . $limit);
 if ($limit) {
-    $stmt->bindValue(':current_pagination_page', (int)$_GET['current_pagination_page'] * (int)$comments_per_pagination_page, PDO::PARAM_INT);
+    $stmt->bindValue(':current_pagination_page', (int)$_GET['current_pagination_page'] * (int) $comments_per_pagination_page, PDO::PARAM_INT);
 
     //bIND THE PAGE ID TO OUR QUERY
     $stmt->bindvalue('page_id', $_GET['page_id'], PDO::PARAM_INT);

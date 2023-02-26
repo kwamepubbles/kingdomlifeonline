@@ -11,7 +11,7 @@ include('components/header.php');
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="card-body w-auto h-100" style=" margin-left:-15px; margin-right:-20px; background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );">
-                    
+
                     </div>
                 </div>
 
@@ -36,6 +36,15 @@ include('components/header.php');
                                         <h6>Author: <?php echo $post['author']; ?> </h6>
                                     </i></p>
                                 <p class="card-text"><small class="text-muted"> Posted on <?php echo $post['date']; ?></small></p>
+                                <div class="comments">
+                                    <script src="assets/js/comment.js"></script>
+                                    <script>
+                                        new Comments({
+                                            page_id: 1
+                                        });
+                                    </script>
+                                </div>
+                                <?php include('admin/comments.php'); ?>
                             </div>
                         <?php endforeach; ?>
                     </div>

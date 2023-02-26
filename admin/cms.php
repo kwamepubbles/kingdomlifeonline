@@ -131,5 +131,6 @@ include('../scripts/db.config.php');
             </div>
         </section>
         <?php
+        include('comments.php');
         include('../components/footer.php');
         ?>
