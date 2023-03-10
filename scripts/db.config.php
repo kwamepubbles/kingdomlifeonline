@@ -13,6 +13,13 @@ define('ADMIN_PASS', 'admin');
 define('COMMENTS_APPROVAL_REQUIRED', false);
 //Default profile image
 define('DEFAULT_PROFILE_IMAGE', 'avatar-user.png');
+//Url Root
+ $host1 = "http://localhost/kingdomlifeonline/";
+ $host = "/";
+ define ("URLROOT", $host1);
+//Site Name
+define("SITENAME", "kingdomlifeonline");
+
 try {
     $plug = new PDO("mysql:host=" . HOST . ";dbname=" . DATABASE, USER, PASSWORD);
     $plug->setAttribute(PDO::ATTR_ERRMODE,  PDO::ERRMODE_EXCEPTION);

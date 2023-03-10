@@ -40,7 +40,7 @@ include('components/header.php');
                                     <script src="assets/js/comment.js"></script>
                                     <script>
                                         new Comments({
-                                            page_id: 1
+                                            page_id: 0
                                         });
                                     </script>
                                 </div>
